@@ -1,0 +1,3418 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Bookme\n"
+"POT-Creation-Date: 2022-07-21 19:47+0530\n"
+"PO-Revision-Date: 2022-07-21 19:49+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: init.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: app/admin/Appearance.php:45 app/admin/Settings.php:46
+#: app/admin/Settings.php:116
+msgid "Settings have been saved."
+msgstr ""
+
+#: app/admin/Appearance.php:84
+msgid "Custom CSS has been saved. Please refresh the page to see the changes."
+msgstr ""
+
+#: app/admin/Bookings.php:41 app/admin/Coupons.php:52
+#: app/admin/Customers.php:40 templates/admin/employees/employee-list.php:58
+#: templates/admin/services/category-item.php:11
+#: templates/admin/services/services-list.php:54
+#: templates/front/booking_form/cart-step.php:28
+#: templates/front/booking_form/cart-step.php:49
+msgid "Edit"
+msgstr ""
+
+#: app/admin/Bookings.php:42 templates/front/customer_bookings/shortcode.php:36
+msgid "No bookings available."
+msgstr ""
+
+#: app/admin/Bookings.php:43 app/admin/Coupons.php:54
+#: app/admin/Customers.php:42 app/admin/Dashboard.php:36
+#: app/admin/Payments.php:39
+msgid "Processing..."
+msgstr ""
+
+#: app/admin/Bookings.php:44 app/admin/Calendar.php:53 app/admin/Coupons.php:55
+#: app/admin/CustomFields.php:28 app/admin/Customers.php:44
+#: app/admin/Dashboard.php:37 app/admin/Employees.php:45
+#: app/admin/Payments.php:40 app/admin/Services.php:43
+msgid "Are you sure?"
+msgstr ""
+
+#: app/admin/Bookings.php:45 app/admin/Dashboard.php:38
+#: app/admin/Payments.php:41
+msgid "Tomorrow"
+msgstr ""
+
+#: app/admin/Bookings.php:46 app/admin/Calendar.php:47
+#: app/admin/Dashboard.php:39 app/admin/Payments.php:42
+msgid "Today"
+msgstr ""
+
+#: app/admin/Bookings.php:47 app/admin/Dashboard.php:40
+#: app/admin/Payments.php:43
+msgid "Yesterday"
+msgstr ""
+
+#: app/admin/Bookings.php:48 app/admin/Dashboard.php:41
+#: app/admin/Payments.php:44
+msgid "Last 7 Days"
+msgstr ""
+
+#: app/admin/Bookings.php:49 app/admin/Dashboard.php:42
+#: app/admin/Payments.php:45
+msgid "Last 30 Days"
+msgstr ""
+
+#: app/admin/Bookings.php:50 app/admin/Dashboard.php:43
+#: app/admin/Payments.php:46
+msgid "This Month"
+msgstr ""
+
+#: app/admin/Bookings.php:51
+msgid "Next Month"
+msgstr ""
+
+#: app/admin/Bookings.php:52 app/admin/Dashboard.php:45
+#: app/admin/Payments.php:48
+msgid "Custom Range"
+msgstr ""
+
+#: app/admin/Bookings.php:53 app/admin/Dashboard.php:46
+#: app/admin/Payments.php:49
+msgid "Apply"
+msgstr ""
+
+#: app/admin/Bookings.php:54 app/admin/Dashboard.php:47
+#: app/admin/Payments.php:50 app/front/CustomerBookings.php:55
+#: inc/mains/notification/Codes.php:292 inc/mains/notification/Codes.php:296
+#: inc/mains/notification/Codes.php:308
+#: templates/admin/fragments/booking-delete-dialog.php:20
+#: templates/admin/shortcode_button/page.php:119
+#: templates/front/booking_form/customer-duplicate-dialog.php:11
+#: templates/front/booking_form/login-form-dialog.php:37
+#: templates/front/customer_bookings/rows.php:37
+msgid "Cancel"
+msgstr ""
+
+#: app/admin/Bookings.php:55 app/admin/Dashboard.php:48
+#: app/admin/Payments.php:51
+msgid "To"
+msgstr ""
+
+#: app/admin/Bookings.php:56 app/admin/Dashboard.php:49
+#: app/admin/Payments.php:52
+msgid "From"
+msgstr ""
+
+#: app/admin/Bookings.php:57 app/admin/Dashboard.php:50
+#: app/admin/Payments.php:53
+msgid "No result found."
+msgstr ""
+
+#: app/admin/Bookings.php:58
+#: templates/admin/employees/edit-employee-panel.php:331
+#: templates/admin/fragments/sidebar-menu.php:133
+#: templates/admin/services/service-panel.php:254
+#: templates/admin/settings/online_meeting-tab.php:5
+#: templates/admin/settings/online_meeting-tab.php:23
+msgid "Zoom"
+msgstr ""
+
+#: app/admin/Calendar.php:48
+msgid "Week"
+msgstr ""
+
+#: app/admin/Calendar.php:49
+msgid "Day"
+msgstr ""
+
+#: app/admin/Calendar.php:50
+msgid "Month"
+msgstr ""
+
+#: app/admin/Calendar.php:51
+msgid "All Day"
+msgstr ""
+
+#: app/admin/Calendar.php:52 templates/admin/custom_fields/page.php:116
+#: templates/admin/custom_fields/page.php:139
+#: templates/admin/custom_fields/page.php:162
+#: templates/admin/custom_fields/page.php:185
+#: templates/admin/custom_fields/page.php:216
+#: templates/admin/custom_fields/page.php:225
+#: templates/admin/custom_fields/page.php:257
+#: templates/admin/custom_fields/page.php:266
+#: templates/admin/custom_fields/page.php:298
+#: templates/admin/employees/edit-employee-panel.php:15
+#: templates/admin/fragments/booking-delete-dialog.php:6
+#: templates/admin/fragments/booking-delete-dialog.php:21
+#: templates/admin/services/category-item.php:12
+#: templates/admin/services/service-panel.php:24
+#: templates/front/booking_form/cart-step.php:31
+#: templates/front/booking_form/cart-step.php:52
+msgid "Delete"
+msgstr ""
+
+#: app/admin/Calendar.php:158
+#, php-format
+msgid "%s of %s"
+msgstr ""
+
+#: app/admin/Calendar.php:206
+msgid "Start time is required."
+msgstr ""
+
+#: app/admin/Calendar.php:208 app/admin/Calendar.php:210
+#: app/admin/Calendar.php:278 app/admin/Calendar.php:312
+msgid "Unexpected error, try again."
+msgstr ""
+
+#: app/admin/Calendar.php:213
+msgid "Service is required."
+msgstr ""
+
+#: app/admin/Calendar.php:216
+msgid "Customer is required."
+msgstr ""
+
+#: app/admin/Calendar.php:229
+#, php-format
+msgid "Maximum %d customers are allowed for this service."
+msgstr ""
+
+#: app/admin/Calendar.php:301
+msgid "The selected time interval is occupied by another booking"
+msgstr ""
+
+#: app/admin/Calendar.php:321
+#, php-format
+msgid "\"%s\" has reached the limit of bookings for this service"
+msgstr ""
+
+#: app/admin/Calendar.php:488
+#, php-format
+msgid "%s customers"
+msgstr ""
+
+#: app/admin/Coupons.php:53
+msgid "No coupons available."
+msgstr ""
+
+#: app/admin/Coupons.php:56 templates/admin/services/page.php:30
+#: templates/admin/services/page.php:47
+msgid "All Services"
+msgstr ""
+
+#: app/admin/Coupons.php:57 templates/admin/employees/employee-list.php:48
+msgid "No services assigned"
+msgstr ""
+
+#: app/admin/Coupons.php:100
+msgid "Discount should be between 0 and 100."
+msgstr ""
+
+#: app/admin/Coupons.php:102
+msgid "Deduction should be a positive number."
+msgstr ""
+
+#: app/admin/CustomFields.php:29
+msgid "Custom fields have been saved."
+msgstr ""
+
+#: app/admin/Customers.php:41
+msgid "No customers available."
+msgstr ""
+
+#: app/admin/Customers.php:43
+msgid "Customer has been saved."
+msgstr ""
+
+#: app/admin/Customers.php:163
+msgid "First name is required."
+msgstr ""
+
+#: app/admin/Customers.php:166
+msgid "Last name is required."
+msgstr ""
+
+#: app/admin/Customers.php:169
+msgid "Name is required."
+msgstr ""
+
+#: app/admin/Dashboard.php:35 app/admin/Payments.php:38
+msgid "No payments available."
+msgstr ""
+
+#: app/admin/Dashboard.php:44 app/admin/Payments.php:47
+msgid "Last Month"
+msgstr ""
+
+#: app/admin/Dashboard.php:51 templates/admin/bookings/page.php:18
+msgid "Bookings"
+msgstr ""
+
+#: app/admin/Dashboard.php:52 templates/admin/dashboard/page.php:92
+msgid "Revenue"
+msgstr ""
+
+#: app/admin/Employees.php:46
+msgid "Member has been saved."
+msgstr ""
+
+#: app/admin/Employees.php:47 app/admin/Settings.php:47
+msgid "Repeat every year"
+msgstr ""
+
+#: app/admin/Employees.php:48 app/admin/Settings.php:48
+msgid "We are not working on this day"
+msgstr ""
+
+#: app/admin/Employees.php:234 inc/core/Ajax.php:39
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: app/admin/Employees.php:324
+msgid "The start time must be less than the end time"
+msgstr ""
+
+#: app/admin/Employees.php:335
+msgid "This time period is not available"
+msgstr ""
+
+#: app/admin/Employees.php:359
+msgid "Unexpected error, Please try again."
+msgstr ""
+
+#: app/admin/Fragments.php:32
+msgid "Success"
+msgstr ""
+
+#: app/admin/Fragments.php:33 app/front/Stripe.php:142
+msgid "Error"
+msgstr ""
+
+#: app/admin/Fragments.php:182 inc/mains/Installer.php:483
+#: templates/admin/fragments/booking-panel.php:46
+msgid "Select service"
+msgstr ""
+
+#: app/admin/Fragments.php:183
+msgid "No result found"
+msgstr ""
+
+#: app/admin/Fragments.php:184
+msgid "Edit booking"
+msgstr ""
+
+#: app/admin/Fragments.php:185
+msgid "New booking"
+msgstr ""
+
+#: app/admin/Notifications.php:42
+msgid "Notifications have been saved."
+msgstr ""
+
+#: app/admin/Notifications.php:43
+msgid "Notifications have been sent."
+msgstr ""
+
+#: app/admin/Notifications.php:203
+msgid "SMS has been sent."
+msgstr ""
+
+#: app/admin/Payments.php:62 inc/mains/Installer.php:492
+#: templates/admin/employees/edit-employee-panel.php:33
+#: templates/admin/settings/labels-tab.php:18
+msgid "Details"
+msgstr ""
+
+#: app/admin/Payments.php:148
+msgid "See details for more items"
+msgstr ""
+
+#: app/admin/Services.php:44
+msgid "Category has been saved."
+msgstr ""
+
+#: app/admin/Services.php:45
+msgid "Settings has been saved."
+msgstr ""
+
+#: app/admin/Services.php:46 templates/admin/custom_fields/page.php:114
+#: templates/admin/custom_fields/page.php:137
+#: templates/admin/custom_fields/page.php:160
+#: templates/admin/custom_fields/page.php:183
+#: templates/admin/custom_fields/page.php:210
+#: templates/admin/custom_fields/page.php:223
+#: templates/admin/custom_fields/page.php:251
+#: templates/admin/custom_fields/page.php:264
+#: templates/admin/custom_fields/page.php:292
+#: templates/admin/employees/employee-list.php:18
+#: templates/admin/services/category-item.php:5
+#: templates/admin/services/services-list.php:33
+#: templates/admin/settings/cart-tab.php:32
+#: templates/admin/settings/payments-tab.php:72
+#: templates/admin/settings/payments-tab.php:95
+#: templates/admin/settings/payments-tab.php:174
+#: templates/admin/settings/payments-tab.php:237
+#: templates/admin/settings/payments-tab.php:291
+#: templates/admin/settings/payments-tab.php:371
+#: templates/admin/settings/payments-tab.php:445
+msgid "Reorder"
+msgstr ""
+
+#: app/admin/Services.php:64
+msgid "New Category"
+msgstr ""
+
+#: app/admin/Services.php:125
+msgid "Specified order"
+msgstr ""
+
+#: app/admin/Services.php:126
+msgid "Least occupied that day"
+msgstr ""
+
+#: app/admin/Services.php:127
+msgid "Most occupied that day"
+msgstr ""
+
+#: app/admin/Services.php:128
+msgid "Least expensive"
+msgstr ""
+
+#: app/admin/Services.php:129
+msgid "Most expensive"
+msgstr ""
+
+#: app/admin/Settings.php:64
+#, php-format
+msgid ""
+"WooCommerce cart is not set up. Click <a href=\"%s\">here</a> to set it up."
+msgstr ""
+
+#: app/admin/Settings.php:71 app/front/BookingForm.php:391
+#: app/front/CustomerBookings.php:52 inc/mains/Installer.php:420
+#: inc/mains/notification/Codes.php:244 inc/notification_cron.php:135
+#: templates/admin/fragments/booking-panel.php:56
+#: templates/admin/payment/page.php:77
+#: templates/admin/payment/payment-details.php:20
+#: templates/admin/payment/payment-details.php:36
+#: templates/admin/shortcode_button/page.php:95
+msgid "Date"
+msgstr ""
+
+#: app/admin/Settings.php:72 app/front/BookingForm.php:395
+#: app/front/CustomerBookings.php:53 inc/mains/Installer.php:421
+#: inc/mains/Installer.php:490 inc/mains/notification/Codes.php:247
+#: templates/admin/settings/labels-tab.php:14
+#: templates/admin/shortcode_button/page.php:101
+#: templates/front/booking_form/detail-step.php:121
+msgid "Time"
+msgstr ""
+
+#: app/admin/Settings.php:75 app/front/BookingForm.php:403
+#: app/front/CustomerBookings.php:51 inc/mains/notification/Codes.php:253
+#: templates/admin/employees/edit-employee-panel.php:143
+#: templates/admin/payment/payment-details.php:39
+#: templates/admin/services/service-panel.php:77
+#: templates/admin/services/services-list.php:16
+#: templates/admin/shortcode_button/page.php:107
+msgid "Price"
+msgstr ""
+
+#: app/admin/Settings.php:303 app/admin/Settings.php:311
+#: app/admin/Settings.php:320
+msgid "Purchase code verified successfully."
+msgstr ""
+
+#: app/admin/Settings.php:305 app/admin/Settings.php:313
+#: app/admin/Settings.php:322 app/admin/Settings.php:329
+msgid "Some error occurred, Please try again."
+msgstr ""
+
+#: app/admin/Settings.php:439
+msgid "Select product"
+msgstr ""
+
+#: app/admin/ShortcodeButton.php:38
+msgid "Add Bookme Form"
+msgstr ""
+
+#: app/admin/ShortcodeButton.php:38
+msgid "Bookme Form"
+msgstr ""
+
+#: app/admin/ShortcodeButton.php:40
+msgid "Add Bookme Customer Bookings List"
+msgstr ""
+
+#: app/admin/ShortcodeButton.php:40
+#: templates/admin/shortcode_button/page.php:302
+msgid "Bookme Customer Bookings"
+msgstr ""
+
+#: app/front/AuthorizeNet.php:73 app/front/BookingForm.php:683
+#: app/front/BookingForm.php:898 app/front/Razorpay.php:75
+#: app/front/Stripe.php:73 app/front/Stripe.php:154
+#: app/front/WooCommerce.php:88 app/front/WooCommerce.php:91
+msgid ""
+"Selected time slot is not available anymore. Please, choose another time "
+"slot."
+msgstr ""
+
+#: app/front/AuthorizeNet.php:77 app/front/BookingForm.php:249
+#: app/front/BookingForm.php:318 app/front/BookingForm.php:427
+#: app/front/BookingForm.php:610 app/front/BookingForm.php:687
+#: app/front/BookingForm.php:734 app/front/BookingForm.php:902
+#: app/front/BookingForm.php:952 app/front/BookingForm.php:1008
+#: app/front/Razorpay.php:79 app/front/Stripe.php:77 app/front/Stripe.php:158
+#: app/front/Stripe.php:188 app/front/TwoCheckout.php:57
+#: app/front/WooCommerce.php:94
+msgid "Invalid session data."
+msgstr ""
+
+#: app/front/BookingForm.php:205
+msgid "Invalid form id."
+msgstr ""
+
+#: app/front/BookingForm.php:234 app/front/BookingForm.php:237
+#, php-format
+msgctxt "Available time slots"
+msgid "%s Available"
+msgstr ""
+
+#: app/front/BookingForm.php:676
+msgid "Pay locally is not available."
+msgstr ""
+
+#: app/front/BookingForm.php:708
+msgid "Your payment has been accepted for further processing."
+msgstr ""
+
+#: app/front/BookingForm.php:712
+msgid "Thank you! Your booking is successfully booked."
+msgstr ""
+
+#: app/front/BookingForm.php:728
+msgid ""
+"You have reached the booking limit, Please contact us to make a booking."
+msgstr ""
+
+#: app/front/BookingForm.php:923
+msgid "Incorrect username or password."
+msgstr ""
+
+#: app/front/BookingForm.php:997 app/front/BookingForm.php:1004
+msgid "This coupon code is invalid"
+msgstr ""
+
+#: app/front/CustomerBookings.php:54 templates/admin/bookings/page.php:91
+#: templates/admin/bookings/page.php:110
+#: templates/admin/fragments/customer-details-panel.php:33
+#: templates/admin/payment/page.php:84
+#: templates/admin/payment/payment-details.php:24
+#: templates/admin/shortcode_button/page.php:113
+msgid "Status"
+msgstr ""
+
+#: app/front/PayPal.php:104 app/front/TwoCheckout.php:26
+msgid "Invalid token provided"
+msgstr ""
+
+#: app/front/Stripe.php:64
+msgid "Unexpected Error, try again."
+msgstr ""
+
+#: app/front/WooCommerce.php:127
+msgid "Sorry, the time slot %date_time% for %service% has been already booked."
+msgstr ""
+
+#: app/front/WooCommerce.php:339
+msgid "Service was not found"
+msgstr ""
+
+#: assets/admin/js/moment.min.js:6
+msgid "\n"
+msgstr ""
+
+#: inc/external/zoom/Request.php:142
+msgid "Unknown error"
+msgstr ""
+
+#: inc/external/zoom/Request.php:145
+msgid "Invalid JSON"
+msgstr ""
+
+#: inc/external/zoom/Request.php:149
+msgid "Empty body"
+msgstr ""
+
+#: inc/mains/Google.php:363 inc/mains/Installer.php:421
+#: inc/mains/Installer.php:482 inc/mains/Installer.php:489
+#: inc/notification_cron.php:136
+#: templates/admin/employees/edit-employee-panel.php:138
+#: templates/admin/fragments/booking-panel.php:44
+#: templates/admin/settings/labels-tab.php:13
+#: templates/admin/settings/labels-tab.php:29
+#: templates/admin/settings/labels-tab.php:30
+#: templates/admin/shortcode_button/page.php:83
+msgid "Service"
+msgstr ""
+
+#: inc/mains/Google.php:368 inc/mains/functions/Validator.php:249
+#: templates/admin/employees/ae3cnhb8wy.php:91
+#: templates/admin/fragments/customer-panel.php:51
+#: templates/admin/services/services-list.php:14
+#: templates/front/booking_form/detail-step.php:34
+msgid "Name"
+msgstr ""
+
+#: inc/mains/Google.php:369 inc/mains/functions/Validator.php:242
+#: templates/admin/customers/page.php:42
+#: templates/admin/employees/add-employee-panel.php:48
+#: templates/admin/employees/edit-employee-panel.php:77
+#: templates/admin/fragments/customer-panel.php:58
+#: templates/front/booking_form/detail-step.php:49
+msgid "Email"
+msgstr ""
+
+#: inc/mains/Google.php:370 inc/mains/functions/Validator.php:241
+#: templates/admin/customers/page.php:43
+#: templates/admin/employees/add-employee-panel.php:56
+#: templates/admin/employees/edit-employee-panel.php:85
+#: templates/admin/fragments/customer-panel.php:62
+#: templates/admin/settings/company-tab.php:27
+#: templates/front/booking_form/detail-step.php:41
+msgid "Phone"
+msgstr ""
+
+#: templates/admin/customers/page.php:43
+msgid "Length:"
+msgstr ""
+
+#: inc/mains/Google.php:379 templates/admin/bookings/page.php:112
+#: templates/admin/fragments/booking-panel.php:106
+msgid "Online Meeting"
+msgstr ""
+
+#: inc/mains/Google.php:386
+msgid "Meeting Password"
+msgstr ""
+
+#: inc/mains/Installer.php:419
+msgid "Booking"
+msgstr ""
+
+#: inc/mains/Installer.php:475 inc/mains/Updater.php:229
+#: templates/admin/customers/page.php:45
+#: templates/admin/fragments/customer-panel.php:68
+msgid "Notes"
+msgstr ""
+
+#: inc/mains/Installer.php:480 templates/admin/services/service-panel.php:195
+#: templates/admin/settings/labels-tab.php:24
+#: templates/admin/settings/labels-tab.php:25
+#: templates/admin/shortcode_button/page.php:77
+msgid "Category"
+msgstr ""
+
+#: inc/mains/Installer.php:481
+msgid "Select category"
+msgstr ""
+
+#: inc/mains/Installer.php:484 templates/admin/settings/labels-tab.php:32
+msgid "Please select a service"
+msgstr ""
+
+#: inc/mains/Installer.php:485 templates/admin/settings/labels-tab.php:35
+#: templates/admin/settings/labels-tab.php:36
+msgid "Employee"
+msgstr ""
+
+#: inc/mains/Installer.php:486 templates/admin/shortcode_button/page.php:48
+msgid "Any"
+msgstr ""
+
+#: inc/mains/Installer.php:487 templates/admin/settings/labels-tab.php:38
+msgid "Please select an employee"
+msgstr ""
+
+#: inc/mains/Installer.php:488
+#: templates/admin/fragments/customer-details-panel.php:42
+#: templates/admin/settings/labels-tab.php:41
+#: templates/admin/settings/labels-tab.php:42
+msgid "Number of persons"
+msgstr ""
+
+#: inc/mains/Installer.php:491 templates/admin/fragments/sidebar-menu.php:117
+#: templates/admin/settings/cart-tab.php:5
+#: templates/admin/settings/cart-tab.php:11
+#: templates/admin/settings/labels-tab.php:16
+#: templates/front/booking_form/service-step.php:41
+#: templates/front/booking_form/time-step.php:67
+msgid "Cart"
+msgstr ""
+
+#: inc/mains/Installer.php:493 templates/admin/settings/labels-tab.php:19
+msgid "Done"
+msgstr ""
+
+#: inc/mains/Installer.php:502 inc/mains/Installer.php:574
+msgid "{service_name} Booking Pending"
+msgstr ""
+
+#: inc/mains/Installer.php:503 inc/mains/Installer.php:511
+#: inc/mains/Installer.php:617 inc/mains/Installer.php:625
+msgid ""
+"Dear {customer_name}.\n"
+"This is a confirmation that you have booked {service_name}.\n"
+"We are waiting you at {company_address} on {booking_date} {booking_time}.\n"
+"\n"
+"Thank you for choosing our company.\n"
+"{company_name}\n"
+"{company_phone}\n"
+"{company_website}"
+msgstr ""
+
+#: inc/mains/Installer.php:510 inc/mains/Installer.php:583
+msgid "{service_name} Booking Approved"
+msgstr ""
+
+#: inc/mains/Installer.php:518 inc/mains/Installer.php:592
+msgid "{service_name} Booking Canceled"
+msgstr ""
+
+#: inc/mains/Installer.php:519 inc/mains/Installer.php:633
+msgid ""
+"Dear {customer_name}.\n"
+"Your booking of {service_name} on {booking_date} {appointment_time} has been "
+"canceled.\n"
+"\n"
+"Thank you for choosing our company.\n"
+"{company_name}\n"
+"{company_phone}\n"
+"{company_website}"
+msgstr ""
+
+#: inc/mains/Installer.php:526 inc/mains/Installer.php:600
+msgid "{service_name} Booking Rejected"
+msgstr ""
+
+#: inc/mains/Installer.php:527 inc/mains/Installer.php:641
+msgid ""
+"Dear {customer_name}.\n"
+"Your booking of {service_name} on {booking_date} {appointment_time} has been "
+"rejected.\n"
+"\n"
+"Reason: {cancellation_reason}\n"
+"\n"
+"Thank you for choosing our company.\n"
+"{company_name}\n"
+"{company_phone}\n"
+"{company_website}"
+msgstr ""
+
+#: inc/mains/Installer.php:534
+msgid "Your login details"
+msgstr ""
+
+#: inc/mains/Installer.php:535 inc/mains/Installer.php:649
+msgid ""
+"Hello.\n"
+"An account was created for you at {site_address}\n"
+"\n"
+"Your login details:\n"
+"user: {new_username}\n"
+"password: {new_password}\n"
+"\n"
+"Thanks."
+msgstr ""
+
+#: inc/mains/Installer.php:542
+msgid "{service_name} Appointment Reminder"
+msgstr ""
+
+#: inc/mains/Installer.php:543 inc/mains/Installer.php:657
+msgid ""
+"Dear {customer_name}.\n"
+"We would like to remind you that you have booked {service_name} tomorrow at "
+"{booking_time}. We are waiting for you at {company_address}.\n"
+"\n"
+"Thank you for choosing our company.\n"
+"{company_name}\n"
+"{company_phone}\n"
+"{company_website}"
+msgstr ""
+
+#: inc/mains/Installer.php:550
+msgid "Your visit to {company_name}"
+msgstr ""
+
+#: inc/mains/Installer.php:551 inc/mains/Installer.php:665
+msgid ""
+"Dear {customer_name}.\n"
+"Thank you for choosing {company_name}. We hope you were satisfied with your "
+"{service_name}.\n"
+"Thank you and we look forward to seeing you again soon.\n"
+"{company_name}\n"
+"{company_phone}\n"
+"{company_website}"
+msgstr ""
+
+#: inc/mains/Installer.php:558 inc/mains/Installer.php:566
+msgid "Your appointment information"
+msgstr ""
+
+#: inc/mains/Installer.php:559 inc/mains/Installer.php:673
+msgid ""
+"Dear {customer_name}.\n"
+"This is a confirmation that you have booked the following services:\n"
+"\n"
+"{cart_info}\n"
+"\n"
+"Thank you for choosing our company.\n"
+"{company_name}\n"
+"{company_phone}\n"
+"{company_website}"
+msgstr ""
+
+#: inc/mains/Installer.php:567 inc/mains/Installer.php:681
+msgid ""
+"Dear {customer_name}.\n"
+"This is a confirmation that you have booked the following items:\n"
+"\n"
+"{cart_info}\n"
+"\n"
+"Thank you for choosing our company.\n"
+"{company_name}\n"
+"{company_phone}\n"
+"{company_website}"
+msgstr ""
+
+#: inc/mains/Installer.php:575 inc/mains/Installer.php:584
+#: inc/mains/Installer.php:689 inc/mains/Installer.php:698
+msgid ""
+"Hello.\n"
+"\n"
+"You have a new booking.\n"
+"\n"
+"Service: {service_name}\n"
+"Date: {booking_date}\n"
+"Time: {booking_time} - {booking_end_time}\n"
+"Customer name: {customer_name}\n"
+"Customer phone: {customer_phone}\n"
+"Customer email: {customer_email}"
+msgstr ""
+
+#: inc/mains/Installer.php:593 inc/mains/Installer.php:707
+msgid ""
+"Hello.\n"
+"\n"
+"The following booking has been canceled.\n"
+"\n"
+"Service: {service_name}\n"
+"Date: {booking_date}\n"
+"Time: {booking_time} - {booking_end_time}\n"
+"Customer name: {customer_name}\n"
+"Customer phone: {customer_phone}\n"
+"Customer email: {customer_email}"
+msgstr ""
+
+#: inc/mains/Installer.php:601 inc/mains/Installer.php:715
+msgid ""
+"Hello.\n"
+"\n"
+"The following booking has been rejected.\n"
+"\n"
+"Reason: {cancellation_reason}\n"
+"\n"
+"Service: {service_name}\n"
+"Date: {booking_date}\n"
+"Time: {booking_time} - {booking_end_time}\n"
+"Customer name: {customer_name}\n"
+"Customer phone: {customer_phone}\n"
+"Customer email: {customer_email}"
+msgstr ""
+
+#: inc/mains/Installer.php:608
+msgid "Your agenda for {tomorrow_date}"
+msgstr ""
+
+#: inc/mains/Installer.php:609 inc/mains/Installer.php:723
+msgid ""
+"Hello.\n"
+"\n"
+"Your agenda for tomorrow is:\n"
+"\n"
+"{next_day_agenda}"
+msgstr ""
+
+#: inc/mains/SMS.php:56
+msgid "Unexpected error, please try again."
+msgstr ""
+
+#: inc/mains/booking/Cart.php:297
+#, php-format
+msgid " and %d more item"
+msgid_plural " and %d more items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/mains/functions/DateTime.php:247
+#, php-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/mains/functions/DateTime.php:250
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/mains/functions/DateTime.php:253
+#, php-format
+msgid "%d h"
+msgstr ""
+
+#: inc/mains/functions/DateTime.php:256
+#, php-format
+msgid "%d min"
+msgstr ""
+
+#: inc/mains/functions/System.php:283
+msgid "Copy"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:35
+#, php-format
+msgid "\"%s\" is too long (%d characters max)."
+msgstr ""
+
+#: inc/mains/functions/Validator.php:43
+msgid "Name is required"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:46
+msgid "First name is required"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:49
+msgid "Last name is required"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:65
+msgid "Invalid email"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:77
+msgid "This email is already in use"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:81
+msgid "Email is required"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:95
+msgid "Phone is required"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:110
+msgid "Invalid data sent"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:113 inc/mains/functions/Validator.php:131
+#: inc/mains/functions/Validator.php:149 inc/mains/functions/Validator.php:171
+#: templates/admin/custom_fields/page.php:129
+#: templates/admin/custom_fields/page.php:152
+#: templates/admin/custom_fields/page.php:175
+#: templates/admin/custom_fields/page.php:197
+#: templates/admin/custom_fields/page.php:238
+#: templates/admin/custom_fields/page.php:279
+msgid "Required"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:128
+msgid "Invalid date sent"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:146
+msgid "Invalid time sent"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:190
+msgid "reCaptcha response is invalid."
+msgstr ""
+
+#: inc/mains/functions/Validator.php:246
+#: templates/front/booking_form/detail-step.php:21
+msgid "First Name"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:247
+#: templates/front/booking_form/detail-step.php:27
+msgid "Last Name"
+msgstr ""
+
+#: inc/mains/functions/Validator.php:263
+#, php-format
+msgid ""
+"This %s(%s) is already assigned to another user with different %s.<br/>Click "
+"\"Update\" if you want to update your data, or \"Cancel\" to edit the "
+"entered data."
+msgstr ""
+
+#: inc/mains/tables/CustomerBooking.php:86 inc/mains/tables/Payment.php:289
+#: templates/admin/settings/general-tab.php:157
+msgid "Pending"
+msgstr ""
+
+#: inc/mains/tables/CustomerBooking.php:88
+#: templates/admin/settings/general-tab.php:161
+msgid "Approved"
+msgstr ""
+
+#: inc/mains/tables/CustomerBooking.php:90
+msgid "Cancelled"
+msgstr ""
+
+#: inc/mains/tables/CustomerBooking.php:92
+msgid "Rejected"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:71 inc/mains/tables/Notification.php:81
+msgid "Pending Appointment"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:72
+msgid "Pending Appointments"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:73 inc/mains/tables/Notification.php:82
+msgid "Approved Appointment"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:74
+msgid "Approved Appointments"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:75 inc/mains/tables/Notification.php:83
+msgid "Canceled Appointment"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:76 inc/mains/tables/Notification.php:84
+msgid "Rejected Appointment"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:77
+msgid "Follow Up Message After Appointment "
+msgstr ""
+
+#: inc/mains/tables/Notification.php:78
+msgid "New WP User Login Details"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:79
+msgid "Reminder About Next Day Appointment"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:85
+msgid "Next Day Agenda"
+msgstr ""
+
+#: inc/mains/tables/Notification.php:91
+#: templates/admin/notifications/email-tab.php:91
+#: templates/admin/notifications/email-tab.php:160
+#: templates/admin/notifications/email-tab.php:253
+#: templates/admin/notifications/sms-tab.php:76
+#: templates/admin/notifications/sms-tab.php:124
+#: templates/admin/notifications/sms-tab.php:193
+msgid "Message"
+msgstr ""
+
+#: inc/mains/tables/Payment.php:257
+msgid "Local"
+msgstr ""
+
+#: inc/mains/tables/Payment.php:269
+#: templates/front/booking_form/detail-step.php:166
+msgid "Coupon"
+msgstr ""
+
+#: inc/mains/tables/Payment.php:287
+msgid "Completed"
+msgstr ""
+
+#: inc/mains/tables/Service.php:106
+msgid "Untitled"
+msgstr ""
+
+#: inc/mains/tables/Service.php:121
+msgid "Uncategorized"
+msgstr ""
+
+#: inc/notification_cron.php:137 templates/admin/bookings/page.php:61
+#: templates/admin/bookings/page.php:106
+#: templates/admin/notifications/email-tab.php:31
+#: templates/admin/notifications/email-tab.php:128
+#: templates/admin/payment/page.php:78
+#: templates/admin/payment/payment-details.php:12
+msgid "Customer"
+msgstr ""
+
+#: inc/payment/Mollie.php:105
+msgid "Mollie accepts payments in Euro only."
+msgstr ""
+
+#: inc/payment/Mollie.php:141
+msgid "Mollie error."
+msgstr ""
+
+#: init.php:114 templates/admin/dashboard/page.php:17
+#: templates/admin/fragments/sidebar-menu.php:14
+msgid "Dashboard"
+msgstr ""
+
+#: init.php:115 templates/admin/coupons/coupon-panel.php:34
+#: templates/admin/coupons/page.php:42
+#: templates/admin/employees/ae3cnhb8wy.php:92
+#: templates/admin/employees/edit-employee-panel.php:113
+#: templates/admin/fragments/sidebar-menu.php:35
+#: templates/admin/services/page.php:16
+msgid "Services"
+msgstr ""
+
+#: init.php:116 templates/admin/employees/ae3cnhb8wy.php:35
+#: templates/admin/fragments/sidebar-menu.php:23
+#: templates/admin/services/service-panel.php:206
+#: templates/admin/services/service-panel.php:244
+msgid "Staff Members"
+msgstr ""
+
+#: init.php:117 templates/admin/fragments/sidebar-menu.php:41
+#: templates/front/customer_bookings/shortcode.php:15
+msgid "All Bookings"
+msgstr ""
+
+#: init.php:118 templates/admin/calendar/page.php:17
+#: templates/admin/employees/edit-employee-panel.php:310
+#: templates/admin/fragments/sidebar-menu.php:48
+msgid "Calendar"
+msgstr ""
+
+#: init.php:119 templates/admin/customers/page.php:17
+#: templates/admin/fragments/booking-panel.php:75
+#: templates/admin/fragments/sidebar-menu.php:55
+#: templates/admin/fragments/sidebar-menu.php:113
+#: templates/admin/settings/customer-tab.php:5
+msgid "Customers"
+msgstr ""
+
+#: init.php:120 templates/admin/customers/page.php:48
+#: templates/admin/fragments/sidebar-menu.php:61
+#: templates/admin/fragments/sidebar-menu.php:141
+#: templates/admin/payment/page.php:17
+#: templates/admin/settings/payments-tab.php:8
+msgid "Payments"
+msgstr ""
+
+#: init.php:121 templates/admin/appearance/page.php:17
+#: templates/admin/fragments/sidebar-menu.php:67
+msgid "Appearance"
+msgstr ""
+
+#: init.php:122 templates/admin/fragments/sidebar-menu.php:73
+#: templates/admin/fragments/sidebar-menu.php:76
+#: templates/admin/fragments/sidebar-menu.php:145
+#: templates/admin/notifications/page.php:17
+#: templates/admin/notifications/test-notification-panel.php:35
+#: templates/admin/settings/notification-tab.php:5
+msgid "Notifications"
+msgstr ""
+
+#: init.php:123 templates/admin/custom_fields/page.php:17
+#: templates/admin/fragments/customer-details-panel.php:47
+#: templates/admin/fragments/sidebar-menu.php:91
+#: templates/admin/shortcode_button/page.php:123
+msgid "Custom Fields"
+msgstr ""
+
+#: init.php:124 templates/admin/coupons/page.php:17
+#: templates/admin/fragments/sidebar-menu.php:97
+#: templates/admin/settings/payments-tab.php:39
+msgid "Coupons"
+msgstr ""
+
+#: init.php:125 templates/admin/fragments/sidebar-menu.php:103
+#: templates/admin/fragments/sidebar-menu.php:106
+#: templates/admin/settings/page.php:17
+msgid "Settings"
+msgstr ""
+
+#: init.php:137 templates/admin/employees/ae3cnhb8wy.php:37
+#: templates/admin/fragments/sidebar-menu.php:25
+msgid "Profile"
+msgstr ""
+
+#: init.php:242
+msgid "Not Available"
+msgstr ""
+
+#: templates/admin/appearance/booking-form.php:116
+#: templates/front/booking_form/service-step.php:54
+msgid "Select Date"
+msgstr ""
+
+#: templates/admin/appearance/booking-form.php:124
+#: templates/front/booking_form/cart-step.php:88
+#: templates/front/booking_form/detail-step.php:325
+#: templates/front/booking_form/service-step.php:64
+msgid "Next"
+msgstr ""
+
+#: templates/admin/appearance/page.php:18 templates/admin/bookings/page.php:19
+#: templates/admin/calendar/page.php:18 templates/admin/coupons/page.php:18
+#: templates/admin/custom_fields/page.php:18
+#: templates/admin/customers/page.php:18 templates/admin/dashboard/page.php:18
+#: templates/admin/employees/ae3cnhb8wy.php:39
+#: templates/admin/notifications/page.php:18
+#: templates/admin/payment/page.php:18 templates/admin/services/page.php:17
+#: templates/admin/settings/page.php:18
+msgid "admin panel"
+msgstr ""
+
+#: templates/admin/appearance/page.php:26
+#, php-format
+msgid ""
+"To edit the labels of the booking form, <a href=\"%s\" class=\"alert-link"
+"\">click here</a>."
+msgstr ""
+
+#: templates/admin/appearance/page.php:37
+msgid "Primary Color"
+msgstr ""
+
+#: templates/admin/appearance/page.php:48
+msgid "Secondary Color"
+msgstr ""
+
+#: templates/admin/appearance/page.php:61
+msgid "Progress Bar"
+msgstr ""
+
+#: templates/admin/appearance/page.php:64
+#: templates/admin/appearance/page.php:83
+#: templates/admin/appearance/page.php:102
+msgid "Show"
+msgstr ""
+
+#: templates/admin/appearance/page.php:80
+msgid "Service duration next to service name"
+msgstr ""
+
+#: templates/admin/appearance/page.php:99
+msgid "Service price next to employee name"
+msgstr ""
+
+#: templates/admin/appearance/page.php:118
+msgid "Form Layout"
+msgstr ""
+
+#: templates/admin/appearance/page.php:123
+msgid "One Column"
+msgstr ""
+
+#: templates/admin/appearance/page.php:127
+msgid "Two Column"
+msgstr ""
+
+#: templates/admin/appearance/page.php:134
+#: templates/admin/appearance/page.php:167
+#: templates/admin/coupons/coupon-panel.php:13
+#: templates/admin/custom_fields/page.php:99
+#: templates/admin/employees/add-employee-panel.php:10
+#: templates/admin/employees/break-item.php:27
+#: templates/admin/employees/edit-employee-panel.php:11
+#: templates/admin/employees/edit-employee-panel.php:256
+#: templates/admin/employees/holidays-panel.php:9
+#: templates/admin/fragments/booking-panel.php:16
+#: templates/admin/fragments/customer-details-panel.php:18
+#: templates/admin/fragments/customer-panel.php:14
+#: templates/admin/notifications/email-tab.php:304
+#: templates/admin/notifications/sms-tab.php:231
+#: templates/admin/notifications/test-notification-panel.php:16
+#: templates/admin/services/service-panel.php:20
+#: templates/admin/settings/cart-tab.php:52
+#: templates/admin/settings/company-tab.php:46
+#: templates/admin/settings/customer-tab.php:170
+#: templates/admin/settings/general-tab.php:270
+#: templates/admin/settings/google-calendar-tab.php:79
+#: templates/admin/settings/google-recaptcha-tab.php:50
+#: templates/admin/settings/holidays-tab.php:29
+#: templates/admin/settings/labels-tab.php:47
+#: templates/admin/settings/notification-tab.php:226
+#: templates/admin/settings/online_meeting-tab.php:51
+#: templates/admin/settings/payments-tab.php:490
+#: templates/admin/settings/purchase-code-tab.php:27
+#: templates/admin/settings/woocommerce-tab.php:82
+#: templates/admin/settings/working-hours-tab.php:53
+msgid "Save"
+msgstr ""
+
+#: templates/admin/appearance/page.php:136
+#: templates/admin/appearance/page.php:179
+msgid "Custom CSS"
+msgstr ""
+
+#: templates/admin/appearance/page.php:164
+msgid "Edit custom CSS"
+msgstr ""
+
+#: templates/admin/appearance/page.php:170
+#: templates/admin/coupons/coupon-panel.php:16
+#: templates/admin/employees/add-employee-panel.php:13
+#: templates/admin/employees/break-item.php:31
+#: templates/admin/employees/edit-employee-panel.php:18
+#: templates/admin/employees/edit-employee-panel.php:260
+#: templates/admin/employees/holidays-panel.php:12
+#: templates/admin/fragments/booking-panel.php:19
+#: templates/admin/fragments/customer-details-panel.php:22
+#: templates/admin/fragments/customer-panel.php:17
+#: templates/admin/fragments/payment-dialog.php:16
+#: templates/admin/notifications/test-notification-panel.php:20
+#: templates/admin/services/service-panel.php:30
+msgid "Close"
+msgstr ""
+
+#: templates/admin/bookings/page.php:31
+msgid "Export CSV"
+msgstr ""
+
+#: templates/admin/bookings/page.php:34
+msgid "Add Booking"
+msgstr ""
+
+#: templates/admin/bookings/page.php:43 templates/admin/bookings/page.php:104
+msgid "No."
+msgstr ""
+
+#: templates/admin/bookings/page.php:105 templates/admin/payment/page.php:81
+msgid "Booking Date"
+msgstr ""
+
+#: templates/admin/bookings/page.php:109
+#: templates/admin/services/service-panel.php:60
+#: templates/admin/services/services-list.php:15
+msgid "Duration"
+msgstr ""
+
+#: templates/admin/bookings/page.php:111
+#: templates/admin/fragments/payment-dialog.php:10
+#: templates/admin/payment/payment-details.php:13
+msgid "Payment"
+msgstr ""
+
+#: templates/admin/calendar/page.php:30 templates/admin/calendar/page.php:32
+msgid "All"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:9
+msgid "New coupon"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:10
+msgid "Edit coupon"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:27
+#: templates/admin/coupons/page.php:39
+msgid "Code"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:35
+#: templates/admin/custom_fields/services-field.php:2
+#: templates/admin/employees/edit-employee-panel.php:121
+msgid "Select Services"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:35
+#: templates/admin/custom_fields/services-field.php:2
+msgid "No Service selected"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:35
+#: templates/admin/custom_fields/services-field.php:2
+#: templates/admin/employees/edit-employee-panel.php:123
+#: templates/admin/notifications/test-notification-panel.php:40
+#: templates/admin/services/service-panel.php:211
+msgid "selected"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:35
+#: templates/admin/custom_fields/services-field.php:2
+#: templates/admin/employees/edit-employee-panel.php:124
+#: templates/admin/notifications/test-notification-panel.php:41
+#: templates/admin/services/service-panel.php:212
+msgid "Select All"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:35
+#: templates/admin/custom_fields/services-field.php:2
+#: templates/admin/employees/edit-employee-panel.php:125
+#: templates/admin/notifications/test-notification-panel.php:42
+#: templates/admin/services/service-panel.php:213
+msgid "Unselect All"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:35
+#: templates/admin/custom_fields/services-field.php:2
+#: templates/admin/employees/edit-employee-panel.php:126
+msgid "All Services Selected"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:41
+#: templates/admin/coupons/page.php:40
+msgid "Discount (%)"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:48
+#: templates/admin/coupons/page.php:41
+msgid "Deduction"
+msgstr ""
+
+#: templates/admin/coupons/coupon-panel.php:55
+#: templates/admin/coupons/page.php:43
+msgid "Usage limit"
+msgstr ""
+
+#: templates/admin/coupons/page.php:30
+msgid "Add Coupon"
+msgstr ""
+
+#: templates/admin/coupons/page.php:44
+msgid "Number of times used"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:29
+msgid "Custom fields per service"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:31
+msgid "Create service specific custom fields."
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:36
+#: templates/admin/custom_fields/page.php:56
+#: templates/admin/services/service-panel.php:257
+#: templates/admin/settings/cart-tab.php:14
+#: templates/admin/settings/customer-tab.php:19
+#: templates/admin/settings/customer-tab.php:62
+#: templates/admin/settings/customer-tab.php:83
+#: templates/admin/settings/customer-tab.php:107
+#: templates/admin/settings/customer-tab.php:128
+#: templates/admin/settings/customer-tab.php:152
+#: templates/admin/settings/general-tab.php:38
+#: templates/admin/settings/general-tab.php:59
+#: templates/admin/settings/general-tab.php:83
+#: templates/admin/settings/general-tab.php:107
+#: templates/admin/settings/general-tab.php:131
+#: templates/admin/settings/google-calendar-tab.php:39
+#: templates/admin/settings/google-recaptcha-tab.php:26
+#: templates/admin/settings/notification-tab.php:52
+#: templates/admin/settings/notification-tab.php:143
+#: templates/admin/settings/online_meeting-tab.php:27
+#: templates/admin/settings/payments-tab.php:45
+#: templates/admin/settings/payments-tab.php:148
+#: templates/admin/settings/payments-tab.php:345
+#: templates/admin/settings/payments-tab.php:419
+#: templates/admin/settings/woocommerce-tab.php:32
+msgid "Enable"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:49
+msgid "Merge custom fields for multiple bookings of a service"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:51
+msgid ""
+"If disabled, custom fields will appear for each appointment in the set of "
+"bookings (in cart booking)"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:73
+#: templates/admin/custom_fields/page.php:115
+msgid "Text Field"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:76
+#: templates/admin/custom_fields/page.php:138
+msgid "Text Area"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:80
+#: templates/admin/custom_fields/page.php:161
+msgid "Text Content"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:83
+#: templates/admin/custom_fields/page.php:184
+msgid "Checkboxes"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:87
+#: templates/admin/custom_fields/page.php:224
+msgid "Radio Buttons"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:90
+#: templates/admin/custom_fields/page.php:265
+msgid "Drop Down"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:98
+msgid "HTML allowed in all texts and labels."
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:120
+#: templates/admin/custom_fields/page.php:143
+#: templates/admin/custom_fields/page.php:189
+#: templates/admin/custom_fields/page.php:229
+#: templates/admin/custom_fields/page.php:270
+msgid "Label"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:167
+msgid "Content"
+msgstr ""
+
+#: templates/admin/custom_fields/page.php:203
+#: templates/admin/custom_fields/page.php:213
+#: templates/admin/custom_fields/page.php:244
+#: templates/admin/custom_fields/page.php:254
+#: templates/admin/custom_fields/page.php:285
+#: templates/admin/custom_fields/page.php:295
+msgid "Option"
+msgstr ""
+
+#: templates/admin/customers/page.php:27
+msgid "Total Customers:"
+msgstr ""
+
+#: templates/admin/customers/page.php:31
+#: templates/admin/fragments/customer-panel.php:9
+msgid "Add Customer"
+msgstr ""
+
+#: templates/admin/customers/page.php:40
+msgid "Id"
+msgstr ""
+
+#: templates/admin/customers/page.php:41
+msgid "Full Name"
+msgstr ""
+
+#: templates/admin/customers/page.php:44
+#: templates/admin/fragments/customer-panel.php:26
+msgid "WP User"
+msgstr ""
+
+#: templates/admin/customers/page.php:46
+msgid "Last appointment"
+msgstr ""
+
+#: templates/admin/customers/page.php:47
+msgid "Total appointments"
+msgstr ""
+
+#: templates/admin/dashboard/page.php:43
+msgid "Display data for selected time period."
+msgstr ""
+
+#: templates/admin/dashboard/page.php:57
+msgid "Approved Bookings"
+msgstr ""
+
+#: templates/admin/dashboard/page.php:69
+msgid "Pending Bookings"
+msgstr ""
+
+#: templates/admin/dashboard/page.php:81
+msgid "Total Bookings"
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:7
+#: templates/admin/employees/ae3cnhb8wy.php:59
+msgid "Add Member"
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:26
+#: templates/admin/employees/edit-employee-panel.php:53
+msgid "Full name"
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:32
+#: templates/admin/employees/edit-employee-panel.php:60
+msgid " WP User"
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:34
+#: templates/admin/employees/edit-employee-panel.php:62
+msgid ""
+"Here you can assign a WordPress user to the staff member, if you want to "
+"give the admin access to the staff member. User with \"Administrator\" role "
+"will have access to all the pages and settings, user with another role will "
+"have access to only their personal settings."
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:37
+#: templates/admin/employees/edit-employee-panel.php:65
+msgid "Select WP user"
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:62
+#: templates/admin/employees/edit-employee-panel.php:93
+#: templates/admin/services/service-panel.php:179
+msgid "Visibility"
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:64
+#: templates/admin/employees/edit-employee-panel.php:95
+#: templates/admin/services/service-panel.php:186
+msgid "Public"
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:65
+#: templates/admin/employees/edit-employee-panel.php:96
+#: templates/admin/employees/employee-list.php:31
+#: templates/admin/services/service-panel.php:187
+msgid "Private"
+msgstr ""
+
+#: templates/admin/employees/add-employee-panel.php:69
+#: templates/admin/employees/edit-employee-panel.php:100
+#: templates/admin/services/service-panel.php:300
+msgid "Info"
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:17
+#: templates/admin/employees/page.php:16
+msgid "Thank you for purchasing Bookme plugin."
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:18
+#: templates/admin/employees/page.php:17
+msgid "Follow the below steps, to start using the plugin."
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:20
+#: templates/admin/employees/page.php:20
+msgid "Add staff members."
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:21
+#: templates/admin/employees/page.php:21
+msgid "Add services and assign them to staff members."
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:22
+#: templates/admin/employees/page.php:22
+msgid ""
+"Go to Posts/Pages and use <strong>[bookme]</strong> shortcode to publish the "
+"booking form on your website."
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:23
+#: templates/admin/employees/page.php:23
+msgid "Use the plugin now."
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:51
+msgid "Total Members:"
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:78
+msgid "No Members Available Here."
+msgstr ""
+
+#: templates/admin/employees/ae3cnhb8wy.php:93
+msgid "Contacts"
+msgstr ""
+
+#: templates/admin/employees/break-item.php:9
+msgid "Delete break"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:122
+msgid "No service selected"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:146
+msgid "Capacity (Min - Max)"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:197
+msgid "Schedule"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:211
+msgid "Time (Start - End)"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:214
+msgid "Breaks"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:219
+#: templates/admin/settings/working-hours-tab.php:25
+msgid "Day Off"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:243
+msgid "Add break"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:284
+#: templates/admin/fragments/sidebar-menu.php:125
+#: templates/admin/settings/google-calendar-tab.php:5
+msgid "Google Calendar"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:294
+msgid "Synchronize employee bookings with Google Calendar."
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:299
+msgid "Connect"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:301
+#, php-format
+msgid "Please configure Google Calendar <a href=\"%s\">settings</a> first"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:304
+msgid "Connected"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:304
+msgid "disconnect"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:338
+msgid ""
+"You can set up a personal Zoom account for the staff member. Leave these "
+"fields empty if you want to use the default Zoom account."
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:342
+#: templates/admin/settings/online_meeting-tab.php:41
+#: templates/admin/settings/payments-tab.php:263
+#: templates/admin/settings/payments-tab.php:471
+msgid "API Key"
+msgstr ""
+
+#: templates/admin/employees/edit-employee-panel.php:348
+#: templates/admin/settings/online_meeting-tab.php:45
+msgid "API Secret"
+msgstr ""
+
+#: templates/admin/employees/employee-list.php:65
+#: templates/admin/employees/holidays-panel.php:6
+msgid "Days Off"
+msgstr ""
+
+#: templates/admin/employees/holidays-panel.php:22
+#: templates/admin/settings/holidays-tab.php:10
+msgid "Previous Year"
+msgstr ""
+
+#: templates/admin/employees/holidays-panel.php:29
+#: templates/admin/settings/holidays-tab.php:18
+msgid "Next Year"
+msgstr ""
+
+#: templates/admin/employees/page.php:19
+#, php-format
+msgid ""
+"Please verify your license by providing a valid purchase code. <a href=\"%s"
+"\">Click here to verify.</a>"
+msgstr ""
+
+#: templates/admin/fragments/booking-delete-dialog.php:12
+msgid "Send notifications"
+msgstr ""
+
+#: templates/admin/fragments/booking-delete-dialog.php:15
+msgid "Cancellation reason (optional)"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:13
+#: templates/front/booking_form/done-step.php:6
+msgid "New Booking"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:34
+#: templates/admin/notifications/email-tab.php:193
+msgid "Staff Member"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:62
+msgid "Start time"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:75
+msgid "Selected / maximum"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:85
+msgid "Search customers"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:95
+msgid "New customer"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:118
+#: templates/front/booking_form/login-form-dialog.php:15
+msgid "Password"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:127
+msgid "Notify Customers"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:129
+msgid "Send email or SMS notifications to the customers and staff members."
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:133
+msgid "Don't send"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:134
+msgid "If status changed"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:135
+msgid "To all customers"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:140
+msgid "Internal note"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:158
+msgid "Edit booking details"
+msgstr ""
+
+#: templates/admin/fragments/booking-panel.php:190
+msgid "Remove"
+msgstr ""
+
+#: templates/admin/fragments/customer-details-panel.php:13
+msgid "Edit customer details"
+msgstr ""
+
+#: templates/admin/fragments/customer-panel.php:10
+msgid "Edit Customer"
+msgstr ""
+
+#: templates/admin/fragments/customer-panel.php:40
+msgid "First name"
+msgstr ""
+
+#: templates/admin/fragments/customer-panel.php:44
+msgid "Last name"
+msgstr ""
+
+#: templates/admin/fragments/footer.php:8
+#, php-format
+msgid ""
+"Copyright &copy; %d <a href=\"%s\" target=\"_blank\">Bylancer</a>. All "
+"rights reserved."
+msgstr ""
+
+#: templates/admin/fragments/footer.php:11
+#, php-format
+msgid "Hand-crafted & made with %s"
+msgstr ""
+
+#: templates/admin/fragments/header.php:7
+#, php-format
+msgid ""
+"<strong>Bookme:</strong> Stripe payment method has been upgraded to support "
+"<a href=\"%s\" target=\"_blank\">SCA</a>. You must update your Stripe "
+"settings to use the payment method."
+msgstr ""
+
+#: templates/admin/fragments/header.php:7
+#, php-format
+msgid "Check the payment settings <a href=\"%s\">here</a>."
+msgstr ""
+
+#: templates/admin/fragments/header.php:26
+msgid "Full Screen"
+msgstr ""
+
+#: templates/admin/fragments/header.php:27
+msgid "Version"
+msgstr ""
+
+#: templates/admin/fragments/payment-dialog.php:13
+msgid "Print"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:79
+#: templates/admin/notifications/email-tab.php:12
+#: templates/admin/settings/notification-tab.php:8
+msgid "Email Notifications"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:83
+#: templates/admin/notifications/sms-tab.php:10
+#: templates/admin/settings/notification-tab.php:68
+msgid "SMS Notifications"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:109
+#: templates/admin/settings/general-tab.php:5
+msgid "General"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:121
+#: templates/admin/settings/company-tab.php:5
+msgid "Company"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:129
+#: templates/admin/settings/google-recaptcha-tab.php:5
+#: templates/admin/settings/google-recaptcha-tab.php:22
+msgid "Google reCAPTCHA"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:137
+#: templates/admin/settings/woocommerce-tab.php:5
+#: templates/admin/settings/woocommerce-tab.php:29
+msgid "WooCommerce"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:149
+#: templates/admin/settings/working-hours-tab.php:5
+msgid "Working Hours"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:153
+#: templates/admin/settings/holidays-tab.php:4
+msgid "Holidays"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:157
+#: templates/admin/settings/labels-tab.php:5
+msgid "Labels"
+msgstr ""
+
+#: templates/admin/fragments/sidebar-menu.php:161
+#: templates/admin/settings/purchase-code-tab.php:5
+#: templates/admin/settings/purchase-code-tab.php:20
+msgid "Purchase Code"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:16
+#, php-format
+msgid ""
+"To configure your email notification settings, <a href=\"%s\" class=\"alert-"
+"link\">click here</a>."
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:22
+#: templates/admin/notifications/sms-tab.php:20
+msgid "To Customers"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:25
+#: templates/admin/notifications/sms-tab.php:23
+msgid "Single Notifications"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:51
+#: templates/admin/notifications/email-tab.php:213
+#: templates/admin/notifications/sms-tab.php:47
+#: templates/admin/notifications/sms-tab.php:164
+msgid "Cron Setup Required"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:65
+#: templates/admin/notifications/email-tab.php:153
+#: templates/admin/notifications/email-tab.php:227
+msgid "Subject"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:75
+#: templates/admin/notifications/email-tab.php:237
+#: templates/admin/notifications/sms-tab.php:60
+#: templates/admin/notifications/sms-tab.php:177
+msgid "Sending Time"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:121
+#: templates/admin/notifications/sms-tab.php:95
+msgid "Combined Notifications"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:188
+#: templates/admin/notifications/sms-tab.php:141
+msgid "To Staff Members"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:279
+#: templates/admin/notifications/sms-tab.php:206
+msgid "Send a copy to admin"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:298
+#: templates/admin/notifications/sms-tab.php:225
+msgid ""
+"To send scheduled notifications please add the following line in your cron:"
+msgstr ""
+
+#: templates/admin/notifications/email-tab.php:306
+msgid "Send Test Emails"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:3
+msgid "cart information"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:4
+msgid "cart information with cancel"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:5
+#: templates/admin/notifications/shortcodes.php:14
+msgid "payment type"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:6
+#: templates/admin/notifications/shortcodes.php:9
+msgid "total price of booking (sum of all cart items after applying coupon)"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:7
+#: templates/admin/notifications/shortcodes-wp-user.php:3
+#: templates/admin/notifications/shortcodes.php:15
+msgid "full name of customer"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:8
+#: templates/admin/notifications/shortcodes-wp-user.php:4
+#: templates/admin/notifications/shortcodes.php:16
+msgid "first name of customer"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:9
+#: templates/admin/notifications/shortcodes-wp-user.php:5
+#: templates/admin/notifications/shortcodes.php:17
+msgid "last name of customer"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:10
+#: templates/admin/notifications/shortcodes-wp-user.php:6
+#: templates/admin/notifications/shortcodes.php:18
+msgid "email of customer"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:11
+#: templates/admin/notifications/shortcodes-wp-user.php:7
+#: templates/admin/notifications/shortcodes.php:19
+msgid "phone of customer"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:12
+#: templates/admin/notifications/shortcodes.php:30
+msgid "name of company"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:13
+#: templates/admin/notifications/shortcodes.php:33
+msgid "company phone"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:14
+#: templates/admin/notifications/shortcodes.php:34
+msgid "company web-site address"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:15
+#: templates/admin/notifications/shortcodes.php:31
+msgid "company logo"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-combined.php:16
+#: templates/admin/notifications/shortcodes.php:32
+msgid "address of company"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-staff-agenda.php:3
+#: templates/admin/notifications/shortcodes.php:25
+msgid "name of employee"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-staff-agenda.php:4
+msgid "employee agenda for next day"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-staff-agenda.php:5
+msgid "date of next day"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-wp-user.php:8
+msgid "name of your company"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-wp-user.php:9
+msgid "your company logo"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-wp-user.php:10
+msgid "your company phone"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-wp-user.php:11
+msgid "this web-site address"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-wp-user.php:12
+msgid "address of your company"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-wp-user.php:13
+msgid "customer new username"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-wp-user.php:14
+msgid "customer new password"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes-wp-user.php:15
+msgid "site address"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:3
+msgid "booking number"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:4
+msgid "date of booking"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:5
+msgid "end date of booking"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:6
+msgid "time of booking"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:7
+msgid "end time of booking"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:8
+#: templates/admin/settings/woocommerce-tab.php:69
+msgid "number of persons"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:10
+msgid "URL of approve booking link (to use inside <a> tag)"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:11
+msgid "URL of cancel booking link (to use inside <a> tag)"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:12
+msgid "reason you mentioned while deleting booking"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:13
+msgid "URL of reject booking link (to use inside <a> tag)"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:20
+msgid "name of category"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:21
+msgid "name of service"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:22
+msgid "price of service"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:23
+msgid "duration of service"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:24
+msgid "info of service"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:26
+msgid "phone of employee"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:27
+msgid "email of employee"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:28
+msgid "info of employee"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:29
+msgid "photo of staff"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:35
+msgid "combined values of all custom fields"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:36
+msgid "combined values of all custom fields (formatted in 2 columns)"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:37
+msgid ""
+"URL for adding event to customer's Google Calendar (to use inside <a> tag)"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:38
+msgid "Online meeting url for staff"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:39
+msgid "Online meeting url for customers"
+msgstr ""
+
+#: templates/admin/notifications/shortcodes.php:40
+msgid "Online meeting password"
+msgstr ""
+
+#: templates/admin/notifications/sms-tab.php:14
+#, php-format
+msgid ""
+"To configure your SMS notification settings, <a href=\"%s\" class=\"alert-"
+"link\">click here</a>."
+msgstr ""
+
+#: templates/admin/notifications/sms-tab.php:237
+msgid "SMS charges may be applied by Twilio."
+msgstr ""
+
+#: templates/admin/notifications/sms-tab.php:237
+msgid "Send test SMS"
+msgstr ""
+
+#: templates/admin/notifications/test-notification-panel.php:11
+msgid "Test Email Notifications"
+msgstr ""
+
+#: templates/admin/notifications/test-notification-panel.php:30
+msgid "Recipient Email"
+msgstr ""
+
+#: templates/admin/notifications/test-notification-panel.php:38
+msgid "Select Notifications"
+msgstr ""
+
+#: templates/admin/notifications/test-notification-panel.php:39
+msgid "No selected"
+msgstr ""
+
+#: templates/admin/notifications/test-notification-panel.php:43
+msgid "All Notifications Selected"
+msgstr ""
+
+#: templates/admin/payment/page.php:63 templates/admin/payment/page.php:83
+#: templates/admin/payment/payment-details.php:22
+msgid "Type"
+msgstr ""
+
+#: templates/admin/payment/page.php:82
+msgid "Amount"
+msgstr ""
+
+#: templates/admin/payment/payment-details.php:62
+msgid "Subtotal"
+msgstr ""
+
+#: templates/admin/payment/payment-details.php:67
+#: templates/front/booking_form/detail-step.php:158
+msgid "Discount"
+msgstr ""
+
+#: templates/admin/payment/payment-details.php:86
+#: templates/front/booking_form/cart-step.php:65
+#: templates/front/booking_form/cart-step.php:77
+#: templates/front/booking_form/detail-step.php:187
+msgid "Total"
+msgstr ""
+
+#: templates/admin/payment/payment-details.php:94
+msgid "Complete payment"
+msgstr ""
+
+#: templates/admin/services/page.php:28
+msgid "Categories"
+msgstr ""
+
+#: templates/admin/services/page.php:39
+msgid "Add Category"
+msgstr ""
+
+#: templates/admin/services/page.php:52
+#: templates/admin/services/service-panel.php:17
+msgid "Add Service"
+msgstr ""
+
+#: templates/admin/services/page.php:61
+msgid "No Services Available Here."
+msgstr ""
+
+#: templates/admin/services/page.php:97
+msgid "Update Service"
+msgstr ""
+
+#: templates/admin/services/page.php:101
+msgid ""
+"You are changing a setting which is also set for each staff member "
+"separately. Do you want to update it for all staff members?"
+msgstr ""
+
+#: templates/admin/services/page.php:104
+msgid "Remember my choice"
+msgstr ""
+
+#: templates/admin/services/page.php:108
+msgid "No"
+msgstr ""
+
+#: templates/admin/services/page.php:109
+#: templates/admin/shortcode_button/page.php:133
+msgid "Yes"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:41
+msgid "Title"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:87
+msgid "Start time of the appointment"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:89
+msgid ""
+"Set the start time of the appointment with service duration longer than 1 "
+"day. This time will be displayed in notifications to customers."
+msgstr ""
+
+#: templates/admin/services/service-panel.php:99
+msgid "End time of the appointment"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:101
+msgid ""
+"Set the end time of the appointment with service duration longer than 1 day. "
+"This time will be displayed in notifications to customers."
+msgstr ""
+
+#: templates/admin/services/service-panel.php:114
+msgid "Padding time before"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:116
+msgid ""
+"Set a time before the appointment for preparation or any other thing. When "
+"another booking with same service and employee can not be made."
+msgstr ""
+
+#: templates/admin/services/service-panel.php:121
+#: templates/admin/services/service-panel.php:140
+#: templates/admin/services/service-panel.php:289
+msgid "OFF"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:133
+msgid "Padding time after"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:135
+msgid ""
+"Set a time after the appointment for rest, clean up, etc. When another "
+"booking with same service and staff can not be made."
+msgstr ""
+
+#: templates/admin/services/service-panel.php:154
+msgid "Capacity (min and max)"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:156
+msgid ""
+"Here you can set the minimum and maximum number of persons for one booking."
+msgstr ""
+
+#: templates/admin/services/service-panel.php:181
+msgid ""
+"To hide the service from your customers set the visibility to \"Private\"."
+msgstr ""
+
+#: templates/admin/services/service-panel.php:197
+#: templates/admin/settings/labels-tab.php:26
+msgid "Select Category"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:209
+msgid "Select Staff Members"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:210
+msgid "No staff selected"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:214
+msgid "All Staffs Selected"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:226
+msgid "Staff preference for ANY"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:228
+msgid "Select staff members auto assignment when \"ANY\" option is selected"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:254
+msgid "Enable online meeting for this service."
+msgstr ""
+
+#: templates/admin/services/service-panel.php:272
+msgid "Limit bookings per customer"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:274
+msgid "Limit the number of bookings per customer."
+msgstr ""
+
+#: templates/admin/services/service-panel.php:290
+msgid "per day"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:291
+msgid "per week"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:292
+msgid "per month"
+msgstr ""
+
+#: templates/admin/services/service-panel.php:293
+msgid "per year"
+msgstr ""
+
+#: templates/admin/settings/cart-tab.php:11
+msgid "Give the facility to your client to book multiple appointments at once."
+msgstr ""
+
+#: templates/admin/settings/cart-tab.php:26
+#: templates/admin/shortcode_button/page.php:75
+msgid "Columns"
+msgstr ""
+
+#: templates/admin/settings/company-tab.php:21
+msgid "Company Name"
+msgstr ""
+
+#: templates/admin/settings/company-tab.php:33
+msgid "Website"
+msgstr ""
+
+#: templates/admin/settings/company-tab.php:39
+msgid "Address"
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:12
+msgid "Create WP user account for customers"
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:14
+msgid "Create WP user account for new customers."
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:36
+msgid "New user account role"
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:38
+msgid "Select role for newly created WP users for customer."
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:55
+msgid "Save customer information in cookies"
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:57
+msgid ""
+"Save customer information in cookies and use these details for auto-fill "
+"fields for returning customers."
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:79
+msgid "Use first and last name instead of full name"
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:100
+msgid "Show Login button"
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:102
+msgid "Show login button in the details step of the booking form."
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:124
+msgid "Make phone field required"
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:145
+msgid "Allow duplicate customers"
+msgstr ""
+
+#: templates/admin/settings/customer-tab.php:147
+msgid ""
+"Create a new customer if any of the registration data during the booking is "
+"different."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:12
+msgid "Time Slot Step"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:14
+msgid "This step will be used for all time slots in the plugin."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:31
+msgid "Use service duration as time slot step"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:33
+msgid "Make service duration as time slot step in the booking process."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:55
+msgid "Show time slots in client's time zone"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:76
+msgid "Hide booking end time"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:78
+msgid "Hide the booking end time on the 2nd step of the booking form."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:100
+msgid "Allow staff members to edit their profiles"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:102
+msgid "Allow staff members with WP users to edit their profile."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:124
+msgid "Make employee required"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:126
+msgid "Make selecting employee required in the first step of the booking form"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:148
+msgid "Default Appointment Status"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:150
+msgid "This status will be used for newly booked appointments."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:169
+msgid "Number of days available for booking in advance"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:171
+msgid "Set how far customers can book in advance."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:183
+msgid "Minimum time requirement before booking"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:185
+msgid "Set how late appointments can be booked."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:190
+#: templates/admin/settings/general-tab.php:210
+#: templates/admin/settings/general-tab.php:232
+#: templates/admin/settings/payments-tab.php:110
+#: templates/admin/settings/payments-tab.php:198
+#: templates/admin/settings/payments-tab.php:252
+#: templates/admin/settings/payments-tab.php:307
+#: templates/admin/settings/payments-tab.php:387
+#: templates/admin/settings/payments-tab.php:460
+msgid "Disabled"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:203
+msgid "Minimum time requirement before canceling"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:205
+msgid "Set how late appointments can be cancelled."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:223
+msgid "Phone field default country"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:225
+msgid "Set the default country for the phone field."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:236
+msgid "Guess country by user's IP address"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:244
+msgid "Default Country Code"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:246
+msgid ""
+"Phone numbers must have in international format for SMS notifications. So "
+"this country code will be used if a customer enters the phone number without "
+"country code."
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:257
+msgid "Final step URL"
+msgstr ""
+
+#: templates/admin/settings/general-tab.php:259
+msgid ""
+"Customers will be redirected to this URL after successful booking rather "
+"than displaying the default message."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:9
+#: templates/admin/settings/google-recaptcha-tab.php:9
+#: templates/admin/settings/online_meeting-tab.php:9
+#: templates/admin/settings/payments-tab.php:186
+#: templates/admin/settings/woocommerce-tab.php:14
+msgid "Instructions"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:10
+msgid "To find your client ID and client secret, follow the below steps:"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:12
+msgid ""
+"Go to the <a href=\"https://console.developers.google.com/\" target=\"_blank"
+"\">Google Developers Console</a>."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:13
+msgid "Select a project, or create a new one."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:14
+msgid ""
+"Click in the upper left part to see a sliding sidebar. Next, click "
+"<strong>APIs & Services</strong> -> <strong>Library</strong>. In the list of "
+"APIs look for <strong>Calendar API</strong> and make sure it is enabled."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:15
+msgid ""
+"In the sidebar on the left, select <strong>APIs & Services</strong> -> "
+"<strong>Credentials</strong>."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:16
+msgid ""
+"Go to <strong>OAuth consent screen</strong> tab and give a name to the "
+"product, then click <strong>Save</strong>."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:17
+msgid ""
+"Go to <strong>Credentials</strong> tab and in <strong>New credentials</"
+"strong> drop-down menu select <strong>OAuth client ID</strong>."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:18
+msgid ""
+"Select <strong>Web application</strong> and create your project's OAuth 2.0 "
+"credentials by providing the necessary information. For <strong>Authorized "
+"redirect URIs</strong> enter the <strong>Redirect URI</strong> found below "
+"on this page. Click <strong>Create</strong>."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:19
+msgid ""
+"In the popup window look for the <strong>Client ID</strong> and "
+"<strong>Client secret</strong>. Use them in the form below on this page."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:20
+msgid ""
+"Go to Staff Members, edit a staff member and click <strong>Connect</strong> "
+"which is located at the bottom of the sidepanel."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:24
+msgid "Client ID"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:28
+msgid "Client Secret"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:32
+msgid "Redirect URI"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:32
+msgid "Use this redirect url in Google Console."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:36
+msgid "Remove Google Calendar Busy Slots"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:36
+msgid ""
+"Enable this option if you want to remove Google calendar busy time slots "
+"from employee's free schedule (in the second step of the booking form)"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:51
+msgid "Maximum Number Of Events Fetched"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:51
+msgid ""
+"Specify the maximum number of fetched events from Google Calendar. It is "
+"recommended to use a smaller number because it will affect the form loading "
+"speed."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:64
+msgid "Event Title"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:64
+msgid "Title of Google Calendar event."
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:69
+#: templates/admin/settings/woocommerce-tab.php:70
+msgid "category name"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:70
+#: templates/admin/settings/woocommerce-tab.php:71
+msgid "service name"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:71
+#: templates/admin/settings/woocommerce-tab.php:74
+msgid "employee name"
+msgstr ""
+
+#: templates/admin/settings/google-calendar-tab.php:72
+msgid "customer name"
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:10
+msgid "To find your Site Key and Secret Key, follow the below steps:"
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:12
+msgid ""
+"Go to the <a href=\"https://www.google.com/recaptcha/admin/create\" target="
+"\"_blank\">Google reCAPTCHA</a> and register a new site."
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:13
+msgid ""
+"Enter label and select <strong>reCAPTCHA v2</strong> -> <strong>\"I'm not a "
+"robot\" Checkbox</strong> in <strong>reCAPTCHA type</strong> field."
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:14
+msgid "Enter your domain url."
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:15
+msgid ""
+"Accept Terms of Service and click on the <strong>Submit</strong> button."
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:16
+msgid ""
+"Look for the <strong>Site Key</strong> and <strong>Secret Key</strong>. Use "
+"them in the form below on this page."
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:17
+msgid "Enable Google reCAPTCHA and click on the <strong>Save</strong> button."
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:40
+msgid "Site Key"
+msgstr ""
+
+#: templates/admin/settings/google-recaptcha-tab.php:44
+#: templates/admin/settings/payments-tab.php:209
+#: templates/admin/settings/payments-tab.php:271
+msgid "Secret Key"
+msgstr ""
+
+#: templates/admin/settings/labels-tab.php:9
+msgid "Here configure the labels for the booking form."
+msgstr ""
+
+#: templates/admin/settings/labels-tab.php:11
+msgid "Progress Bar Labels"
+msgstr ""
+
+#: templates/admin/settings/labels-tab.php:22
+msgid "Form Labels"
+msgstr ""
+
+#: templates/admin/settings/labels-tab.php:31
+msgid "Select Service"
+msgstr ""
+
+#: templates/admin/settings/labels-tab.php:37
+msgid "Select Employee"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:12
+msgid "Sender name"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:22
+msgid "Sender email"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:32
+msgid "Send emails as"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:34
+msgid ""
+"HTML allows formatting, fonts, colors etc. With text you must use the text-"
+"mode of the editor below."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:38
+msgid "HTML"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:39
+msgid "Text"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:45
+msgid "Reply directly to customers"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:47
+msgid ""
+"If this option is enabled, then staff members can directly reply to the "
+"email, to reply to the customer."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:70
+#, php-format
+msgid ""
+"Bookme uses <a href=\"%s\" target=\"_blank\" class=\"alert-link\">Twilio SMS "
+"API</a> for sending SMS. Just follow the below steps and enjoy the SMS "
+"service."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:73
+#, php-format
+msgid ""
+"Visit to <a href=\"%s\" target=\"_blank\">Twilio website</a> and sign up or "
+"log in."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:74
+#, php-format
+msgid "After that go to <a href=\"%s\" target=\"_blank\">Console page.</a>"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:75
+msgid "And now copy ACCOUNT SID and AUTH TOKEN and paste below."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:76
+msgid "After that create Twilio phone number and paste below."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:77
+msgid "That's it. Now enjoy the SMS service."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:83
+msgid "Account SID"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:85
+msgid "Get Twilio Account SID from Twilio website."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:96
+msgid "Auth Token"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:98
+msgid "Get Twilio Auth Token from Twilio website"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:109
+msgid "Twilio Phone Number"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:111
+msgid "Get Twilio Phone number from Twilio website"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:122
+msgid "Admin Phone Number"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:124
+msgid "Admin phone number for SMS notification."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:136
+msgid "Combined notifications"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:138
+msgid ""
+"Send a single notification for entire booking rather than separate "
+"notifications for each appointment (e.g. when cart is enabled)."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:158
+msgid "Approve appointment redirect URL (successful)"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:160
+msgid ""
+"URL on which staff member will be redirected when the appointment is "
+"approved successfully."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:169
+msgid "Approve appointment redirect URL (unsuccessful)"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:171
+msgid ""
+"URL on which staff member will be redirected when the appointment is not "
+"approved."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:180
+msgid "Cancel appointment redirect URL (successful)"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:182
+msgid ""
+"URL on which customer will be redirected when the appointment is cancelled "
+"successfully."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:191
+msgid "Cancel appointment redirect URL (unsuccessful)"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:193
+msgid ""
+"URL on which customer will be redirected when the appointment is not "
+"cancelled because of \"minimum time required for canceling\" value."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:202
+msgid "Reject appointment redirect URL (successful)"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:204
+msgid ""
+"URL on which staff member will be redirected when the appointment is "
+"rejected successfully."
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:213
+msgid "Reject appointment redirect URL (unsuccessful)"
+msgstr ""
+
+#: templates/admin/settings/notification-tab.php:215
+msgid ""
+"URL on which customer will be redirected when the appointment is not "
+"rejected."
+msgstr ""
+
+#: templates/admin/settings/online_meeting-tab.php:10
+msgid "To find your API Key and API Secret, follow the below steps:"
+msgstr ""
+
+#: templates/admin/settings/online_meeting-tab.php:12
+msgid ""
+"Go to the <a href=\"https://marketplace.zoom.us/\" target=\"_blank\">Zoom "
+"Marketplace</a> and sign in."
+msgstr ""
+
+#: templates/admin/settings/online_meeting-tab.php:13
+msgid ""
+"Click on the <strong>Develop</strong> dropdown menu and select <strong>Build "
+"APP</strong>."
+msgstr ""
+
+#: templates/admin/settings/online_meeting-tab.php:14
+msgid "Select <strong>JWT</strong> as the app type."
+msgstr ""
+
+#: templates/admin/settings/online_meeting-tab.php:15
+msgid "After creating your app, Fill in your APP information."
+msgstr ""
+
+#: templates/admin/settings/online_meeting-tab.php:16
+msgid ""
+"Go to App Credentials tab and look for the <strong>API Key</strong> and "
+"<strong>API Secret</strong>. Use them in the below form."
+msgstr ""
+
+#: templates/admin/settings/online_meeting-tab.php:17
+msgid "After that, go to Activation tab and make sure your app is activated."
+msgstr ""
+
+#: templates/admin/settings/online_meeting-tab.php:18
+msgid ""
+"Go to <strong>Bookme</strong> > <strong>Services</strong>; edit a service "
+"and enable <strong>Zoom</strong> for the service."
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:14
+msgid "Currency"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:27
+msgid "Price format"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:41
+msgid "Enable discount coupons."
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:73
+msgid "Service paid locally"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:114
+msgid "PayPal Express Checkout"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:121
+msgid "API Username"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:129
+msgid "API Password"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:137
+msgid "API Signature"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:144
+#: templates/admin/settings/payments-tab.php:341
+#: templates/admin/settings/payments-tab.php:415
+msgid "Sandbox Mode"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:188
+#, php-format
+msgid ""
+"Enter <b>Secret</b> and <b>Publishable</b> keys, which are available in the "
+"<a href=\"%s\" target=\"_blank\">Stripe Dashboard</a>, in the below form."
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:189
+#, php-format
+msgid ""
+"In the Stripe Dashboard's <a href=\"%s\" target=\"_blank\">Webhooks "
+"settings</a> section, click <strong>Add endpoint</strong> to add a new "
+"endpoint."
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:190
+#, php-format
+msgid "Enter the following URL as the destination for events <mark>%s</mark>."
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:191
+msgid ""
+"Select these events: <strong>payment_intent.succeeded</strong>, "
+"<strong>payment_intent.payment_failed</strong> and click <strong>Add "
+"endpoint</strong>."
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:202
+#: templates/admin/settings/payments-tab.php:256
+#: templates/admin/settings/payments-tab.php:464
+msgid "Enabled"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:217
+msgid "Publishable Key"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:311
+msgid "2Checkout Standard Checkout"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:317
+msgid ""
+"In <strong>Checkout Options</strong> of your 2Checkout account do the "
+"following steps:"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:320
+msgid ""
+"In <strong>Direct Return</strong> select <b>Header Redirect (Your URL)</b>."
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:321
+msgid "In <strong>Approved URL</strong> enter the URL of your booking page."
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:325
+msgid "Account Number"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:333
+msgid "Secret Word"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:391
+msgid "Authorize.Net AIM"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:398
+msgid "API Login ID"
+msgstr ""
+
+#: templates/admin/settings/payments-tab.php:407
+msgid "API Transaction Key"
+msgstr ""
+
+#: templates/admin/settings/purchase-code-tab.php:13
+msgid "Your purchase code is already verified."
+msgstr ""
+
+#: templates/admin/settings/purchase-code-tab.php:23
+msgid "Don't know your purchase code? Find here."
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:16
+msgid ""
+"First install and activate the WooCommerce plugin.<br/>After activating the "
+"plugin follow the below steps:"
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:19
+msgid "Create a product in WooCommerce that can be placed in cart."
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:20
+msgid "In the form below enable WooCommerce option."
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:21
+msgid ""
+"Select the product that you created at step 1 in the drop down list of "
+"products."
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:22
+msgid "If needed, edit item data which will be displayed in the cart."
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:25
+msgid ""
+"Note: once you have enabled WooCommerce option the built-in payment methods "
+"will no longer work. All your customers will be redirected to WooCommerce "
+"cart for payment processing."
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:45
+msgid "Booking product"
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:55
+msgid "Cart item data"
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:56
+msgid "This data will be displayed in the WooCommerce cart."
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:67
+msgid "booking date"
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:68
+msgid "booking time"
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:72
+msgid "service price"
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:73
+msgid "service info"
+msgstr ""
+
+#: templates/admin/settings/woocommerce-tab.php:75
+msgid "employee info"
+msgstr ""
+
+#: templates/admin/settings/working-hours-tab.php:8
+msgid ""
+"These details will be used as a placeholder for newly added staff members."
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:24
+#: templates/admin/shortcode_button/page.php:36
+msgid "Select default value"
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:26
+#: templates/admin/shortcode_button/page.php:38
+#: templates/admin/shortcode_button/page.php:50
+#: templates/admin/shortcode_button/page.php:58
+msgid "Hide this field"
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:39
+msgid "A default value is required for this field, If you want to hide it."
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:64
+#: templates/admin/shortcode_button/page.php:140
+msgid "Insert"
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:89
+msgid "Staff"
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:266
+msgid "Bookme Shortcode"
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:285
+msgid "Add Bookme booking form"
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:328
+msgid "Bookme Form Shortcode"
+msgstr ""
+
+#: templates/admin/shortcode_button/page.php:338
+msgid "Bookme Customer Bookings Shortcode"
+msgstr ""
+
+#: templates/front/booking_form/card_form.php:4
+msgid "Card Number"
+msgstr ""
+
+#: templates/front/booking_form/card_form.php:8
+msgid "CVC"
+msgstr ""
+
+#: templates/front/booking_form/card_form.php:13
+msgid "Expiration Date"
+msgstr ""
+
+#: templates/front/booking_form/cart-step.php:7
+msgid "List of services selected for booking."
+msgstr ""
+
+#: templates/front/booking_form/cart-step.php:8
+msgid "Click 'BOOK MORE' if you want to book more services."
+msgstr ""
+
+#: templates/front/booking_form/cart-step.php:9
+msgid "BOOK MORE"
+msgstr ""
+
+#: templates/front/booking_form/cart-step.php:18
+msgid "Actions"
+msgstr ""
+
+#: templates/front/booking_form/cart-step.php:86
+#: templates/front/booking_form/detail-step.php:323
+#: templates/front/booking_form/time-step.php:64
+msgid "Back"
+msgstr ""
+
+#: templates/front/booking_form/customer-duplicate-dialog.php:6
+msgid "Data already in use"
+msgstr ""
+
+#: templates/front/booking_form/customer-duplicate-dialog.php:10
+msgid "Update"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:8
+msgid "Please provide your details in the form below."
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:13
+#: templates/front/booking_form/login-form-dialog.php:6
+msgid "Login"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:131
+msgid "by"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:150
+msgid "Sub Total"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:197
+msgid "Choose your payment method"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:208
+msgid "Locally"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:210
+msgid "I will pay locally at the meeting place."
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:219
+msgid "PayPal"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:225
+msgid "I will pay now with PayPal."
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:240
+#: templates/front/booking_form/detail-step.php:254
+#: templates/front/booking_form/detail-step.php:282
+msgid "Credit/Debit Card"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:269
+msgctxt "Razorpay"
+msgid "Razorpay"
+msgstr ""
+
+#: templates/front/booking_form/detail-step.php:296
+msgid "Mollie"
+msgstr ""
+
+#: templates/front/booking_form/login-form-dialog.php:11
+msgid "Username"
+msgstr ""
+
+#: templates/front/booking_form/login-form-dialog.php:23
+msgid "Remember Me"
+msgstr ""
+
+#: templates/front/booking_form/login-form-dialog.php:29
+msgid "Lost your password?"
+msgstr ""
+
+#: templates/front/booking_form/login-form-dialog.php:35
+msgid "Log In"
+msgstr ""
+
+#: templates/front/booking_form/redirection.php:9
+msgid "Page Redirection"
+msgstr ""
+
+#: templates/front/booking_form/redirection.php:12
+#, php-format
+msgid "If you are not redirected automatically, <a href=\"%s\">Click here</a>."
+msgstr ""
+
+#: templates/front/booking_form/time-step.php:15
+msgid ""
+"Available time slots for <strong>{service_title}</strong> by "
+"<strong>{employee_name}</strong>."
+msgstr ""
+
+#: templates/front/booking_form/time-step.php:51
+msgid "Book Now"
+msgstr ""
+
+#: templates/front/booking_form/time-step.php:60
+msgid "No time slot is available for selected details."
+msgstr ""
+
+#: templates/front/customer_bookings/rows.php:41
+msgid "Not allowed"
+msgstr ""
+
+#: templates/front/customer_bookings/rows.php:44
+msgid "Expired"
+msgstr ""
+
+#: templates/front/customer_bookings/shortcode.php:44
+msgid "Show old bookings"
+msgstr ""

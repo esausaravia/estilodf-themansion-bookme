@@ -1,0 +1,119 @@
+@-webkit-keyframes bookme-loader {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(-180deg)
+    }
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+@keyframes bookme-loader {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(-180deg)
+    }
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+.bookme-steps > li:after {
+    left: auto;
+    right: calc(50% + 15px);
+}
+
+.clndr .clndr-controls .clndr-control-button span {
+    left: 8px;
+    right:auto;
+    transform: translateY(-50%) rotate(175deg);
+}
+
+.clndr .clndr-controls .clndr-control-button span.clndr-previous-button {
+    right: 8px;
+    left: auto;
+}
+
+@media (max-width: 600px) {
+    .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+        right: 8%;
+        left: auto;
+    }
+
+    .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+        left: 8%;
+        right:auto;
+    }
+}
+
+@media (max-width: 414px) {
+    .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+        right: 4%;
+        left: auto;
+    }
+
+    .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+        left: 4%;
+        right:auto;
+    }
+}
+
+.bookme-timeslot-time svg, .bookme-timeslot-button-time svg {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.bookme-step-buttons-left  button:first-child {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.bookme-booking-cart-step th {
+    text-align: right;
+}
+
+.bookme-detail-appointments .bookme-d-flex > div:last-of-type {
+    text-align: left;
+}
+
+.bookme-pay-tab {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.bookme-booking-form .intl-tel-input input {
+    padding-left: 0 !important;
+    padding-right: 45px !important;
+}
+
+.bookme-modal-close:hover,
+.bookme-modal-close:focus,
+.bookme-modal-close {
+    float: left;
+}
+
+.bookme-modal-submit {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.intl-tel-input .selected-flag {
+    padding: 0 8px 0 0;
+}
+
+.intl-tel-input .selected-flag .iti-arrow {
+    left: 6px;
+    right: auto;
+}
+
+.intl-tel-input .country-list {
+    text-align: right;
+}
+
+.intl-tel-input .country-list .country-name, .intl-tel-input .country-list .flag-box, .intl-tel-input .country-list .dial-code {
+    margin-right: 6px;
+    margin-left: 0;
+}
