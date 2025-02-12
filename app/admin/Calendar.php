@@ -90,7 +90,7 @@ class Calendar extends Inc\Core\App
         } else {
             $staff_members = $wpdb->get_results(
                 $wpdb->prepare(
-                    "SELECT id FROM `" . Inc\Mains\Tables\Employee::get_table_name() . "` 
+                    "SELECT id FROM `" . Inc\Mains\Tables\Employee::get_table_name() . "`
                     WHERE wp_user_id = %d",
                     get_current_user_id()
                 ),
@@ -118,12 +118,12 @@ class Calendar extends Inc\Core\App
             global $wpdb;
             $info = $wpdb->get_row(
                 $wpdb->prepare(
-                    "SELECT SUM(ca.number_of_persons) AS total_number_of_persons, 
-                            a.staff_id, a.service_id, a.start_date, a.internal_note 
-                        FROM `" . Inc\Mains\Tables\Booking::get_table_name() . "` AS `a` 
-                        LEFT JOIN `" . Inc\Mains\Tables\CustomerBooking::get_table_name() . "` AS `ca` ON ca.booking_id = a.id 
-                        LEFT JOIN `" . Inc\Mains\Tables\EmployeeService::get_table_name() . "` AS `ss` ON ss.staff_id = a.staff_id AND ss.service_id = a.service_id 
-                        WHERE `a`.`id` = %d 
+                    "SELECT SUM(ca.number_of_persons) AS total_number_of_persons,
+                            a.staff_id, a.service_id, a.start_date, a.internal_note
+                        FROM `" . Inc\Mains\Tables\Booking::get_table_name() . "` AS `a`
+                        LEFT JOIN `" . Inc\Mains\Tables\CustomerBooking::get_table_name() . "` AS `ca` ON ca.booking_id = a.id
+                        LEFT JOIN `" . Inc\Mains\Tables\EmployeeService::get_table_name() . "` AS `ss` ON ss.staff_id = a.staff_id AND ss.service_id = a.service_id
+                        WHERE `a`.`id` = %d
                         ORDER BY `a`.`id` ASC",
                     $appointment->get_id()
                 ),
@@ -139,12 +139,12 @@ class Calendar extends Inc\Core\App
 
             $customers = $wpdb->get_results(
                 $wpdb->prepare(
-                    " SELECT 
-                                ca.id, ca.customer_id, ca.custom_fields, ca.number_of_persons, ca.status, ca.payment_id, 
-                                p.paid AS payment, p.total AS payment_total, p.type AS payment_type, p.details AS payment_details, p.status AS payment_status 
-                            FROM `" . Inc\Mains\Tables\CustomerBooking::get_table_name() . "` AS `ca` 
-                            LEFT JOIN `" . Inc\Mains\Tables\Payment::get_table_name() . "` AS `p` ON p.id = ca.payment_id 
-                            WHERE `ca`.`booking_id` = %d 
+                    " SELECT
+                                ca.id, ca.customer_id, ca.custom_fields, ca.number_of_persons, ca.status, ca.payment_id,
+                                p.paid AS payment, p.total AS payment_total, p.type AS payment_type, p.details AS payment_details, p.status AS payment_status
+                            FROM `" . Inc\Mains\Tables\CustomerBooking::get_table_name() . "` AS `ca`
+                            LEFT JOIN `" . Inc\Mains\Tables\Payment::get_table_name() . "` AS `p` ON p.id = ca.payment_id
+                            WHERE `ca`.`booking_id` = %d
                             ORDER BY `ca`.`id` ASC",
                     $appointment->get_id()
                 ),
@@ -340,7 +340,7 @@ class Calendar extends Inc\Core\App
             global $wpdb;
             $ca_list = $wpdb->get_results(
                 $wpdb->prepare(
-                    "SELECT * FROM `" . Inc\Mains\Tables\CustomerBooking::get_table_name() . "` 
+                    "SELECT * FROM `" . Inc\Mains\Tables\CustomerBooking::get_table_name() . "`
                     WHERE booking_id = %d",
                     $appointment_id
                 ),
@@ -381,10 +381,10 @@ class Calendar extends Inc\Core\App
         global $wpdb;
         return $wpdb->get_var(
                 $wpdb->prepare(
-                    "SELECT COUNT(*) FROM `" . Inc\Mains\Tables\Booking::get_table_name() . "` 
-                WHERE id != %d 
-                    AND staff_id = %d 
-                    AND start_date < %s 
+                    "SELECT COUNT(*) FROM `" . Inc\Mains\Tables\Booking::get_table_name() . "`
+                WHERE id != %d
+                    AND staff_id = %d
+                    AND start_date < %s
                     AND end_date > %s",
                     $booking_id,
                     $staff_id,
@@ -406,6 +406,7 @@ class Calendar extends Inc\Core\App
     {
         $where = sprintf("st.id = %d", $staff_id);
         $where .= " AND DATE(`a`.`start_date`) BETWEEN '{$start_date->format('Y-m-d')}' AND '{$end_date->format('Y-m-d')}'";
+        $where .= " AND `ca`.`status` = '". Inc\Mains\Tables\CustomerBooking::STATUS_APPROVED ."' ";
 
         return $this->get_bookings($staff_id, $where);
     }
@@ -437,23 +438,24 @@ class Calendar extends Inc\Core\App
     {
         global $wpdb;
 
-        $bookings = $wpdb->get_results(
-            "SELECT 
-                    a.id, a.staff_any, a.start_date, a.end_date, 
-                    s.title AS service_name, s.color AS service_color, ss.capacity_max AS service_capacity, ss.price AS service_price, 
-                    st.full_name AS staff_name, st.attachment_id AS staff_attachment_id, 
-                    (SELECT SUM(ca.number_of_persons) FROM " . Inc\Mains\Tables\CustomerBooking::get_table_name() . " ca WHERE ca.booking_id = a.id) AS total_number_of_persons, 
-                    ca.number_of_persons, ca.status AS booking_status, 
+        $sqlQuery = "SELECT
+                    a.id, a.staff_any, a.start_date, a.end_date,
+                    s.title AS service_name, s.color AS service_color, ss.capacity_max AS service_capacity, ss.price AS service_price,
+                    st.full_name AS staff_name, st.attachment_id AS staff_attachment_id,
+                    (SELECT SUM(ca.number_of_persons) FROM " . Inc\Mains\Tables\CustomerBooking::get_table_name() . " ca WHERE ca.booking_id = a.id AND ca.status = '". Inc\Mains\Tables\CustomerBooking::STATUS_APPROVED ."') AS total_number_of_persons,
+                    ca.number_of_persons, ca.status AS booking_status,
                     c.full_name AS client_name, c.phone AS client_phone, c.email AS client_email, c.id AS customer_id
-                FROM `" . Inc\Mains\Tables\Booking::get_table_name() . "` AS `a` 
-                LEFT JOIN `" . Inc\Mains\Tables\CustomerBooking::get_table_name() . "` AS `ca` ON ca.booking_id = a.id 
-                LEFT JOIN `" . Inc\Mains\Tables\Customer::get_table_name() . "` AS `c` ON c.id = ca.customer_id 
-                LEFT JOIN `" . Inc\Mains\Tables\Service::get_table_name() . "` AS `s` ON s.id = a.service_id 
-                LEFT JOIN `" . Inc\Mains\Tables\Employee::get_table_name() . "` AS `st` ON st.id = a.staff_id 
-                LEFT JOIN `" . Inc\Mains\Tables\EmployeeService::get_table_name() . "` AS `ss` ON ss.staff_id = a.staff_id AND ss.service_id = a.service_id 
-                WHERE $where 
-                GROUP BY a.id 
-                ORDER BY `a`.`id` ASC"
+                FROM `" . Inc\Mains\Tables\Booking::get_table_name() . "` AS `a`
+                LEFT JOIN `" . Inc\Mains\Tables\CustomerBooking::get_table_name() . "` AS `ca` ON ca.booking_id = a.id
+                LEFT JOIN `" . Inc\Mains\Tables\Customer::get_table_name() . "` AS `c` ON c.id = ca.customer_id
+                LEFT JOIN `" . Inc\Mains\Tables\Service::get_table_name() . "` AS `s` ON s.id = a.service_id
+                LEFT JOIN `" . Inc\Mains\Tables\Employee::get_table_name() . "` AS `st` ON st.id = a.staff_id
+                LEFT JOIN `" . Inc\Mains\Tables\EmployeeService::get_table_name() . "` AS `ss` ON ss.staff_id = a.staff_id AND ss.service_id = a.service_id
+                WHERE $where
+                GROUP BY a.id
+                ORDER BY `a`.`id` ASC";
+
+        $bookings = $wpdb->get_results($sqlQuery
             ,
             ARRAY_A);
 

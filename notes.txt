@@ -1,0 +1,60 @@
+Download
+rsync -avn --no-o --no-g estiloaws:/var/www/edfsite/html/the-mansion/wp-content/plugins/bookme/ ./
+
+
+Upload
+rsync -avn --no-o --no-g ./ estiloaws:/var/www/edfsite/html/the-mansion/wp-content/plugins/bookme/
+
+
+error_log("PATH:338\n".$wpdb->last_query, 3, '/var/www/edfsite/html/the-mansion/esau.log');
+
+
+# Para bloquear horarios, editar
+inc/mains/availability/Loader.php:176
+
+$fecha = $client_dp->format('Y-m-d');
+$hora = $client_dp->format('H');
+if ( $fecha==='2025-02-05' || $fecha==='2025-02-12' || $fecha==='2025-02-19' )
+{
+    if ( (int)$hora<13 )
+    {
+        continue;
+    }
+}
+
+
+
+# Restricción de Edad
+inc/mains/functions/Validator.php:174
+
+if ( (int)$field->id===81331 && (int)$field->value<18 ) {
+  $this->errors['custom_fields'][ $cart_key ][ $field->id ] = esc_html__( 'Debes ser mayor de edad', 'bookme' );
+}
+
+
+
+# Reservas x persona
+assets/front/js/bookme.js:406
+
+max_capacity = 4;
+
+
+
+# Contabilizar unicamente reservaciones STATUS_APPROVED
+inc/mains/availability/Loader.php:424
+
+Comentar STATUS_PENDING
+
+
+
+# Selected time slot is not available anymore. Please, choose another time slot.
+inc/mains/booking/Cart.php:347
+
+
+
+# Admin Calendario solo contabilizar reservaciones confirmadas
+app/admin/Calendar.php:445
+SELECT SUM(ca.number_of_persons) FROM " . Inc\Mains\Tables\CustomerBooking::get_table_name() . " ca WHERE ca.booking_id = a.id AND ca.status = '". Inc\Mains\Tables\CustomerBooking::STATUS_APPROVED ."'
+
+
+

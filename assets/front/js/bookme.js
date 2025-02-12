@@ -403,6 +403,7 @@
                                     ? staff[staff_id].services[service_id].max_capacity
                                     : services[service_id].max_capacity)
                                 : 1;
+							max_capacity = 5;
                             var min_capacity = service_id
                                 ? (staff_id
                                     ? staff[staff_id].services[service_id].min_capacity

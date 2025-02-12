@@ -243,7 +243,7 @@ class Cart
             global $wpdb;
             $data = $wpdb->get_results(
                 $wpdb->prepare(
-                    "SELECT service_id FROM `".Inc\Mains\Tables\CouponService::get_table_name()."` 
+                    "SELECT service_id FROM `".Inc\Mains\Tables\CouponService::get_table_name()."`
                         WHERE coupon_id = %d",
                     $coupon->get_id()
                 ),
@@ -337,17 +337,17 @@ class Cart
 
                         $rows = $wpdb->query(
                             $wpdb->prepare(
-                                " SELECT 
-                                    ss.capacity_max, SUM(ca.number_of_persons) AS total_number_of_persons, DATE_SUB(a.start_date, INTERVAL (COALESCE(s.padding_left,0) ) SECOND) AS bound_left, DATE_ADD(a.end_date, INTERVAL (COALESCE(s.padding_right,0) ) SECOND) AS bound_right 
-                                FROM `".Inc\Mains\Tables\CustomerBooking::get_table_name()."` AS `ca` 
-                                LEFT JOIN `".Inc\Mains\Tables\Booking::get_table_name()."` AS `a` ON a.id = ca.booking_id 
-                                LEFT JOIN `".Inc\Mains\Tables\EmployeeService::get_table_name()."` AS `ss` ON ss.staff_id = a.staff_id AND ss.service_id = a.service_id 
-                                LEFT JOIN `".Inc\Mains\Tables\Service::get_table_name()."` AS `s` ON s.id = a.service_id 
-                                WHERE `a`.`staff_id` = %d 
-                                    AND `ca`.`status` IN ('".Inc\Mains\Tables\CustomerBooking::STATUS_PENDING."','".Inc\Mains\Tables\CustomerBooking::STATUS_APPROVED."') 
-                                GROUP BY a.service_id, a.start_date 
-                                HAVING (%s > bound_left AND bound_right > %s AND ( total_number_of_persons + %d ) > ss.capacity_max) 
-                                ORDER BY `ca`.`id` ASC 
+                                " SELECT
+                                    ss.capacity_max, SUM(ca.number_of_persons) AS total_number_of_persons, DATE_SUB(a.start_date, INTERVAL (COALESCE(s.padding_left,0) ) SECOND) AS bound_left, DATE_ADD(a.end_date, INTERVAL (COALESCE(s.padding_right,0) ) SECOND) AS bound_right
+                                FROM `".Inc\Mains\Tables\CustomerBooking::get_table_name()."` AS `ca`
+                                LEFT JOIN `".Inc\Mains\Tables\Booking::get_table_name()."` AS `a` ON a.id = ca.booking_id
+                                LEFT JOIN `".Inc\Mains\Tables\EmployeeService::get_table_name()."` AS `ss` ON ss.staff_id = a.staff_id AND ss.service_id = a.service_id
+                                LEFT JOIN `".Inc\Mains\Tables\Service::get_table_name()."` AS `s` ON s.id = a.service_id
+                                WHERE `a`.`staff_id` = %d
+                                    AND `ca`.`status` IN ('".Inc\Mains\Tables\CustomerBooking::STATUS_APPROVED."')
+                                GROUP BY a.service_id, a.start_date
+                                HAVING (%s > bound_left AND bound_right > %s AND ( total_number_of_persons + %d ) > ss.capacity_max)
+                                ORDER BY `ca`.`id` ASC
                                 LIMIT 1",
                                 $staff_id,
                                 $bound_end->format('Y-m-d H:i:s'),
@@ -355,6 +355,7 @@ class Cart
                                 $cart_item->get('number_of_persons')
                             )
                         );
+                        //'".Inc\Mains\Tables\CustomerBooking::STATUS_PENDING."',
 
                         if ($rows != 0) {
                             // Exist intersect booking, time not available.

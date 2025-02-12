@@ -173,6 +173,15 @@ class Loader
                     // Skip slots earlier than requested time.
                     continue;
                 }
+                $fecha = $client_dp->format('Y-m-d');
+                $hora = $client_dp->format('H');
+                if ( $fecha==='2025-02-05' || $fecha==='2025-02-12' || $fecha==='2025-02-19' )
+                {
+                    if ( (int)$hora<13 )
+                    {
+                        continue;
+                    }
+                }
 
                 // Decide how to group slots
                 $group = $this->group_default($client_dp);
@@ -267,11 +276,11 @@ class Loader
         // Service preference rule and Staff preference orders
         $sp_spo = array();
         $preference_orders = $this->wpdb->get_results(
-                "SELECT 
-                            s.staff_preference, s.id AS service_id, sp.staff_id, sp.position 
-                        FROM `".Inc\Mains\Tables\Service::get_table_name()."` AS `s` 
-                        LEFT JOIN `".Inc\Mains\Tables\EmployeePreferenceOrder::get_table_name()."` AS `sp` ON sp.service_id = s.id 
-                        WHERE `s`.`id` IN (".implode(',', array_keys($ss_ids)) .") 
+                "SELECT
+                            s.staff_preference, s.id AS service_id, sp.staff_id, sp.position
+                        FROM `".Inc\Mains\Tables\Service::get_table_name()."` AS `s`
+                        LEFT JOIN `".Inc\Mains\Tables\EmployeePreferenceOrder::get_table_name()."` AS `sp` ON sp.service_id = s.id
+                        WHERE `s`.`id` IN (".implode(',', array_keys($ss_ids)) .")
                         ORDER BY sp.service_id ASC"
             ,
             ARRAY_A
@@ -293,9 +302,9 @@ class Loader
         }
 
         $staff_services = $this->wpdb->get_results(
-                "SELECT 
-                            ss.service_id, ss.staff_id, ss.price, ss.capacity_min, ss.capacity_max 
-                        FROM `".Inc\Mains\Tables\EmployeeService::get_table_name()."` AS `ss` 
+                "SELECT
+                            ss.service_id, ss.staff_id, ss.price, ss.capacity_min, ss.capacity_max
+                        FROM `".Inc\Mains\Tables\EmployeeService::get_table_name()."` AS `ss`
                         WHERE ".implode(' OR ', $where)
             ,
             ARRAY_A
@@ -380,11 +389,11 @@ class Loader
     private function handle_working_schedules()
     {
         $working_schedule = $this->wpdb->get_results(
-                "SELECT 
-                            ssi.*, break.start_time AS break_start, break.end_time AS break_end 
-                        FROM `".Inc\Mains\Tables\EmployeeSchedule::get_table_name()."` AS `ssi` 
+                "SELECT
+                            ssi.*, break.start_time AS break_start, break.end_time AS break_end
+                        FROM `".Inc\Mains\Tables\EmployeeSchedule::get_table_name()."` AS `ssi`
                         LEFT JOIN `".Inc\Mains\Tables\EmployeeScheduleBreak::get_table_name()."` AS `break` ON break.staff_schedule_id = ssi.id
-                        WHERE ssi.staff_id IN (".implode(',', array_keys($this->staff)) .") 
+                        WHERE ssi.staff_id IN (".implode(',', array_keys($this->staff)) .")
                             AND `ssi`.`start_time` IS NOT NULL"
             ,
             ARRAY_A
@@ -412,13 +421,13 @@ class Loader
 
         // Take into account the statuses.
         $statuses = array(
-            Inc\Mains\Tables\CustomerBooking::STATUS_PENDING,
+            //Inc\Mains\Tables\CustomerBooking::STATUS_PENDING,
             Inc\Mains\Tables\CustomerBooking::STATUS_APPROVED,
         );
         // Bookings
         $bookings = $this->wpdb->get_results(
             $this->wpdb->prepare(
-                "SELECT 
+                "SELECT
                             `a`.`id`,
                             `a`.`staff_id`,
                             `a`.`service_id`,
@@ -426,14 +435,14 @@ class Loader
                             `a`.`end_date`,
                             COALESCE(`s`.`padding_left`,0) AS `padding_left`,
                             COALESCE(`s`.`padding_right`,0) AS `padding_right`,
-                            SUM(`ca`.`number_of_persons`) AS `number_of_bookings` 
-                        FROM `".Inc\Mains\Tables\Booking::get_table_name()."` AS `a` 
-                        LEFT JOIN `".Inc\Mains\Tables\CustomerBooking::get_table_name()."` AS `ca` ON `ca`.`booking_id` = `a`.`id` 
-                        LEFT JOIN `".Inc\Mains\Tables\EmployeeService::get_table_name()."` AS `ss` ON `ss`.`staff_id` = `a`.`staff_id` AND `ss`.`service_id` = `a`.`service_id` 
-                        LEFT JOIN `".Inc\Mains\Tables\Service::get_table_name()."` AS `s` ON `s`.`id` = `a`.`service_id` 
-                        WHERE `a`.`staff_id` IN (".implode(',', array_keys($this->staff)) .") 
-                            AND `ca`.`status` IN ('".implode("','", $statuses) ."') 
-                            AND (DATE_ADD( `a`.`end_date`, INTERVAL (`padding_right` + %d) SECOND) >= %s) 
+                            SUM(`ca`.`number_of_persons`) AS `number_of_bookings`
+                        FROM `".Inc\Mains\Tables\Booking::get_table_name()."` AS `a`
+                        LEFT JOIN `".Inc\Mains\Tables\CustomerBooking::get_table_name()."` AS `ca` ON `ca`.`booking_id` = `a`.`id`
+                        LEFT JOIN `".Inc\Mains\Tables\EmployeeService::get_table_name()."` AS `ss` ON `ss`.`staff_id` = `a`.`staff_id` AND `ss`.`service_id` = `a`.`service_id`
+                        LEFT JOIN `".Inc\Mains\Tables\Service::get_table_name()."` AS `s` ON `s`.`id` = `a`.`service_id`
+                        WHERE `a`.`staff_id` IN (".implode(',', array_keys($this->staff)) .")
+                            AND `ca`.`status` IN ('".implode("','", $statuses) ."')
+                            AND (DATE_ADD( `a`.`end_date`, INTERVAL (`padding_right` + %d) SECOND) >= %s)
                         GROUP BY a.id",
                 $padding_left,
                 $this->start_dp->format('Y-m-d')
@@ -457,10 +466,10 @@ class Loader
     {
         $holidays = $this->wpdb->get_results(
             $this->wpdb->prepare(
-                "SELECT 
-                            IF(h.repeat_event, DATE_FORMAT(h.date, '%%m-%%d'), h.date) as date, h.staff_id 
-                        FROM `".Inc\Mains\Tables\Holiday::get_table_name()."` AS `h` 
-                        WHERE h.staff_id IN (".implode(',', array_keys($this->staff)) .") 
+                "SELECT
+                            IF(h.repeat_event, DATE_FORMAT(h.date, '%%m-%%d'), h.date) as date, h.staff_id
+                        FROM `".Inc\Mains\Tables\Holiday::get_table_name()."` AS `h`
+                        WHERE h.staff_id IN (".implode(',', array_keys($this->staff)) .")
                             AND (h.repeat_event = 1 OR h.date >= %s)",
                 $this->start_dp->format('Y-m-d')
             ),
@@ -515,8 +524,8 @@ class Loader
     private function handle_google_calendar(){
         if (get_option('bookme_gc_remove_busy_slots')) {
             $data = $this->wpdb->get_results(
-                    "SELECT * FROM `".Inc\Mains\Tables\Employee::get_table_name()."` 
-                        WHERE id IN (".implode(',', array_keys($this->staff)) .") 
+                    "SELECT * FROM `".Inc\Mains\Tables\Employee::get_table_name()."`
+                        WHERE id IN (".implode(',', array_keys($this->staff)) .")
                             AND `google_data` IS NOT NULL",
                 ARRAY_A
             );

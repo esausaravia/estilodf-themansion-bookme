@@ -171,6 +171,9 @@ class Validator
                     $this->errors['custom_fields'][ $cart_key ][ $field->id ] = esc_html__( 'Required', 'bookme' );
                 }
             }
+            if ( (int)$field->id===81331 && (int)$field->value<18 ) {
+                $this->errors['custom_fields'][ $cart_key ][ $field->id ] = esc_html__( 'Debes ser mayor de edad', 'bookme' );
+            }
         }
     }
 

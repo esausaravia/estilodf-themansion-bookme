@@ -203,7 +203,7 @@ if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50500) {
                 wp_enqueue_script('bookme-google-recaptcha-js', 'https://www.google.com/recaptcha/api.js?render=explicit', array());
             }
 
-            wp_enqueue_script('bookme-js', $assets . '/js/bookme.js', array('bookme-clndr-js', 'bookme-scroll'), BOOKME_VERSION);
+            wp_enqueue_script('bookme-js', $assets . '/js/bookme.js', array('bookme-clndr-js', 'bookme-scroll'), BOOKME_VERSION.'.230822.1037');
 
             global $sitepress, $wp_locale;
             // AJAX url with WPML support
