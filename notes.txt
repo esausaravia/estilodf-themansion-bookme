@@ -3,7 +3,7 @@ rsync -avn --no-o --no-g estiloaws:/var/www/edfsite/html/the-mansion/wp-content/
 
 
 Upload
-rsync -avn --no-o --no-g ./ estiloaws:/var/www/edfsite/html/the-mansion/wp-content/plugins/bookme/
+rsync -avn --no-o --no-g --exclude-from="rsync-exclude.txt"  ./  estiloaws:/var/www/edfsite/html/the-mansion/wp-content/plugins/bookme/
 
 
 error_log("PATH:338\n".$wpdb->last_query, 3, '/var/www/edfsite/html/the-mansion/esau.log');

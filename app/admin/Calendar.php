@@ -404,11 +404,48 @@ class Calendar extends Inc\Core\App
      */
     private function get_bookings_for_calendar($staff_id, \DateTime $start_date, \DateTime $end_date)
     {
+        $booking_status = Inc\Mains\Tables\CustomerBooking::STATUS_APPROVED;
         $where = sprintf("st.id = %d", $staff_id);
         $where .= " AND DATE(`a`.`start_date`) BETWEEN '{$start_date->format('Y-m-d')}' AND '{$end_date->format('Y-m-d')}'";
-        $where .= " AND `ca`.`status` = '". Inc\Mains\Tables\CustomerBooking::STATUS_APPROVED ."' ";
+        $where .= " AND `ca`.`status` = '". $booking_status ."' ";
 
-        return $this->get_bookings($staff_id, $where);
+        // return $this -> get _ bookings ($staff_id, $where);
+
+        global $wpdb;
+
+        $sqlQuery = "SELECT a.id, a.start_date, a.end_date, SUM(ca.number_of_persons) AS total_number_of_persons
+            FROM `edftmwp_bm_bookings` AS `a`
+            LEFT JOIN `edftmwp_bm_customer_bookings` AS `ca` ON ca.booking_id = a.id
+            LEFT JOIN `" . Inc\Mains\Tables\Employee::get_table_name() . "` AS `st` ON st.id = a.staff_id
+            WHERE $where
+            GROUP BY a.id
+            ORDER BY `a`.`id` ASC";
+
+        $bookings = $wpdb->get_results( $wpdb->prepare( $sqlQuery ) , ARRAY_A);
+
+        foreach ($bookings as $key => $booking) {
+
+            $bookings[$key] = array(
+                'id' => $booking['id'],
+                'start' => $booking['start_date'],
+                'end' => $booking['end_date'],
+                'title' => ' ',
+                'status' => $booking_status,
+                'status_title' => Inc\Mains\Tables\CustomerBooking::status_to_string($booking_status),
+                'start_time' => Inc\Mains\Functions\DateTime::format_time($booking['start_date']),
+                'end_time' => Inc\Mains\Functions\DateTime::format_time($booking['end_date']),
+                'staffId' => $staff_id,
+                'staff_name' => '',
+                'staff_photo' => '',
+                'service_color' => '',
+                'service_name' => '',
+                'service_price' => '',
+            );
+
+            $bookings[$key]['clients'] = sprintf(esc_html__('%s customers', 'bookme'), $booking['total_number_of_persons']);
+        }
+
+        return $bookings;
     }
 
     /**
