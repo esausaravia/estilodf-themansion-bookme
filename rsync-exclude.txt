@@ -1,0 +1,6 @@
+rsync-exclude.txt
+notes.txt
+.git/
+/.git
+.git
+.DS_Store

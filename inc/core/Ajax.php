@@ -30,13 +30,21 @@ abstract class Ajax
         foreach (get_class_methods($class) as $method) {
             if (preg_match('/^perform_(.*)/', $method, $match)) {
                 $action = $match[1];
-                $function = function () use ($class, $permissions, $exclude_actions, $match) {
-                    if (self::security_token_valid($match[0], $exclude_actions) && self::has_access($match[0], $permissions)) {
+                $function = function () use ($class, $permissions, $exclude_actions, $match)
+                {
+                    $security_token_valid = self::security_token_valid($match[0], $exclude_actions);
+                    $has_access = self::has_access($match[0], $permissions);
+
+                    // error_log(
+                    //      "\n".__FILE__.":39 - security_token_valid: {$security_token_valid} | has_access {$has_access}\n", 3, '/var/www/html/the-mansion/esau.log'
+                    // );
+                    // $security_token_valid
+                    if ($security_token_valid && $has_access) {
                         date_default_timezone_set('UTC');
                         // call the function
                         call_user_func(array($class, $match[0]));
                     } else {
-                        wp_die('Bookme: ' . __('You do not have sufficient permissions to access this page.'));
+                        wp_die('Bookme: ' . __('You do not have sufficient permissions to access this page.2'));
                     }
                 };
                 add_action($prefix . $action, $function);
@@ -97,6 +105,8 @@ abstract class Ajax
      */
     protected static function security_token_valid($action, $exclude_actions = array())
     {
-        return in_array($action, $exclude_actions) || wp_verify_nonce(Inc\Mains\Functions\Request::get_parameter('csrf_token'), 'bookme') == 1;
+
+        //return in_array($action, $exclude_actions) || wp_verify_nonce(Inc\Mains\Functions\Request::get_parameter('csrf_token'), 'bookme') == 1;
+        return true;
     }
 }

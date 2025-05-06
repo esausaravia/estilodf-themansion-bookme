@@ -167,21 +167,36 @@ class Loader
                 if ($do_break) {
                     break 2;
                 }
+                // error_log("\n".__FILE__.":177\n".print_r($slot,true), 3, '/home/ec2-user/www/the-mansion/esau.log');
+
                 /** @var Functions\Date $client_dp */
                 $client_dp = $slot->start()->to_client_tz();
                 if ($client_dp->lt($this->client_start_dp)) {
                     // Skip slots earlier than requested time.
                     continue;
                 }
+
                 $fecha = $client_dp->format('Y-m-d');
                 $hora = $client_dp->format('H');
-                if ( $fecha==='2025-02-05' || $fecha==='2025-02-12' || $fecha==='2025-02-19' )
+                if ( $slot->staff_id()===1 )
                 {
-                    if ( (int)$hora<13 )
+                    if ( $fecha==='2025-05-08' && (int)$hora>14 )
                     {
                         continue;
                     }
                 }
+                if ( $slot->staff_id()===2 )
+                {
+                    if ( $fecha==='2025-05-08' && (int)$hora>15 )
+                    {
+                        continue;
+                    }
+                    if ( $fecha==='2025-05-24' && (int)$hora<15 )
+                    {
+                        continue;
+                    }
+                }
+
 
                 // Decide how to group slots
                 $group = $this->group_default($client_dp);

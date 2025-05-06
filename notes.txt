@@ -1,12 +1,12 @@
 Download
-rsync -avn --no-o --no-g estiloaws:/var/www/edfsite/html/the-mansion/wp-content/plugins/bookme/ ./
+rsync -avn --no-o --no-g --exclude-from "rsync-exclude.txt" estiloaws:/home/ec2-user/www/the-mansion/wp-content/plugins/bookme/  ./
 
 
 Upload
-rsync -avn --no-o --no-g ./ estiloaws:/var/www/edfsite/html/the-mansion/wp-content/plugins/bookme/
+rsync -avn --no-o --no-g --exclude-from "rsync-exclude.txt"  ./  estiloaws:/home/ec2-user/www/the-mansion/wp-content/plugins/bookme/
 
 
-error_log("PATH:338\n".$wpdb->last_query, 3, '/var/www/edfsite/html/the-mansion/esau.log');
+error_log("\n".__FILE__":338\n".$wpdb->last_query, 3, '/home/ec2-user/www/the-mansion/esau.log');
 
 
 # Para bloquear horarios, editar
@@ -40,15 +40,15 @@ max_capacity = 4;
 
 
 
+# Selected time slot is not available anymore. Please, choose another time slot.
+inc/mains/booking/Cart.php:347
+
+
+
 # Contabilizar unicamente reservaciones STATUS_APPROVED
 inc/mains/availability/Loader.php:424
 
 Comentar STATUS_PENDING
-
-
-
-# Selected time slot is not available anymore. Please, choose another time slot.
-inc/mains/booking/Cart.php:347
 
 
 
@@ -58,3 +58,5 @@ SELECT SUM(ca.number_of_persons) FROM " . Inc\Mains\Tables\CustomerBooking::get_
 
 
 
+
+wp-content/plugins/bookme/inc/core/Ajax.php:110
