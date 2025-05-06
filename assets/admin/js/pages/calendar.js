@@ -135,28 +135,28 @@ jQuery(function ($) {
                 '       <span>' + calEvent.start_time + ' - ' + calEvent.end_time + '</span>' +
                 '   </div>' +
                 '   <div class="fc-customer"></div>' +
-                '   <div class="fc-title d-flex align-items-center">' +
+                /*'   <div class="fc-title d-flex align-items-center">' +
                 '       <div class="service-color-box sm-color-box m-l-0" style="background-color: ' + calEvent.service_color + '"></div>' +
                 '       <span>' + calEvent.service_name + '</span>' +
                 '   </div>' +
                 '   <div class="d-flex align-items-center fc-employee">' +
                 '       <img class="m-r-5 rounded" src="' + calEvent.staff_photo + '" width="18" height="18">' +
                 '       <span class="flex-grow-1">' + calEvent.staff_name + '</span>' +
-                '   </div>' +
+                '   </div>' +*/
                 '</div>' +
                 '<div class="bm-tooltip">' +
                 '   <div class="fc-time">' +
                 '       <span>' + calEvent.start_time + ' - ' + calEvent.end_time + '</span>' +
                 '   </div>' +
                 '   <div class="fc-customer my-2"></div>' +
-                '   <div class="fc-title d-flex align-items-center my-2">' +
+                /*'   <div class="fc-title d-flex align-items-center my-2">' +
                 '       <div class="service-color-box sm-color-box m-l-0" style="background-color: ' + calEvent.service_color + '"></div>' +
                 '       <span>' + calEvent.service_name + '</span>' +
                 '   </div>' +
                 '   <div class="d-flex align-items-center fc-employee">' +
                 '       <img class="m-r-5 rounded" src="' + calEvent.staff_photo + '" width="18" height="18">' +
                 '       <span class="flex-grow-1">' + calEvent.staff_name + '</span>' +
-                '   </div>' +
+                '   </div>' +*/
                 '</div>' +
                 '</div>'
                 ),

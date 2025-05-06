@@ -17,7 +17,7 @@ use Bookme\Inc\Mains\Functions\System;
 
 defined('ABSPATH') or die('No script kiddies please!'); // No direct access
 
-define('BOOKME_VERSION', '4.8');
+define('BOOKME_VERSION', '4.8.edf-202502.131604');
 define('BOOKME_PLUGIN_SLUG', plugin_basename(__FILE__));
 define('BOOKME_PATH', plugin_dir_path(__FILE__));
 define('BOOKME_URL', plugin_dir_url(__FILE__));
@@ -326,3 +326,5 @@ if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50500) {
     Inc\Mains\Plugin::run();
     new BookmePlugin();
 }
+
+add_filter('xmlrpc_enabled', '__return_false');
